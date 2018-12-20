@@ -6,14 +6,13 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface LogMapper {
-	
 	List<Log> queryAllLog();
 	
     int countByExample(LogExample example);
 
     int deleteByExample(LogExample example);
 
-    int deleteByPrimaryKey(Integer lId);
+    int deleteByPrimaryKey(Integer id);
 
     int insert(Log record);
 
@@ -21,7 +20,7 @@ public interface LogMapper {
 
     List<Log> selectByExample(LogExample example);
 
-    Log selectByPrimaryKey(Integer lId);
+    Log selectByPrimaryKey(Integer id);
 
     int updateByExampleSelective(@Param("record") Log record, @Param("example") LogExample example);
 

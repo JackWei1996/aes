@@ -8,5 +8,5 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
 	<!-- 扫描service层包 -->
-	<context:component-scan base-package="service"></context:component-scan>
+	<context:component-scan base-package="com.aisino.service"></context:component-scan>
 </beans>

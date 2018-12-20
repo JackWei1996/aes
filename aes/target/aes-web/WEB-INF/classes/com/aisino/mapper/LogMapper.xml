@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.aisino.mapper.LogMapper">
-
 	<resultMap id="BaseResultMap" type="com.aisino.pojo.Log">
-		<id column="l_id" property="lId" jdbcType="INTEGER" />
-		<result column="op_time" property="opTime" jdbcType="TIMESTAMP" />
-		<result column="m_id" property="mId" jdbcType="INTEGER" />
+		<id column="id" property="id" jdbcType="INTEGER" />
+		<result column="sender" property="sender" jdbcType="VARCHAR" />
+		<result column="receiver_id" property="receiverId"
+			jdbcType="INTEGER" />
+		<result column="se_time" property="seTime" jdbcType="TIMESTAMP" />
+		<result column="statu" property="statu" jdbcType="INTEGER" />
 	</resultMap>
 	<sql id="Example_Where_Clause">
 		<where>
@@ -74,12 +76,12 @@
 		</where>
 	</sql>
 	<sql id="Base_Column_List">
-		l_id, op_time, m_id
+		id, sender, receiver_id, se_time, statu
 	</sql>
+
 	<select id="queryAllLog" resultMap="BaseResultMap">
 		select * from log;
 	</select>
-
 	<select id="selectByExample" resultMap="BaseResultMap"
 		parameterType="com.aisino.pojo.LogExample">
 		select
@@ -100,12 +102,12 @@
 		select
 		<include refid="Base_Column_List" />
 		from log
-		where l_id = #{lId,jdbcType=INTEGER}
+		where id = #{id,jdbcType=INTEGER}
 	</select>
 	<delete id="deleteByPrimaryKey"
 		parameterType="java.lang.Integer">
 		delete from log
-		where l_id = #{lId,jdbcType=INTEGER}
+		where id = #{id,jdbcType=INTEGER}
 	</delete>
 	<delete id="deleteByExample"
 		parameterType="com.aisino.pojo.LogExample">
@@ -115,36 +117,48 @@
 		</if>
 	</delete>
 	<insert id="insert" parameterType="com.aisino.pojo.Log">
-		insert into log (l_id,
-		op_time, m_id
-		)
-		values (#{lId,jdbcType=INTEGER},
-		#{opTime,jdbcType=TIMESTAMP},
-		#{mId,jdbcType=INTEGER}
-		)
+		insert into log (id, sender,
+		receiver_id,
+		se_time, statu)
+		values (#{id,jdbcType=INTEGER},
+		#{sender,jdbcType=VARCHAR},
+		#{receiverId,jdbcType=INTEGER},
+		#{seTime,jdbcType=TIMESTAMP}, #{statu,jdbcType=INTEGER})
 	</insert>
 	<insert id="insertSelective" parameterType="com.aisino.pojo.Log">
 		insert into log
 		<trim prefix="(" suffix=")" suffixOverrides=",">
-			<if test="lId != null">
-				l_id,
+			<if test="id != null">
+				id,
 			</if>
-			<if test="opTime != null">
-				op_time,
+			<if test="sender != null">
+				sender,
 			</if>
-			<if test="mId != null">
-				m_id,
+			<if test="receiverId != null">
+				receiver_id,
+			</if>
+			<if test="seTime != null">
+				se_time,
+			</if>
+			<if test="statu != null">
+				statu,
 			</if>
 		</trim>
 		<trim prefix="values (" suffix=")" suffixOverrides=",">
-			<if test="lId != null">
-				#{lId,jdbcType=INTEGER},
+			<if test="id != null">
+				#{id,jdbcType=INTEGER},
 			</if>
-			<if test="opTime != null">
-				#{opTime,jdbcType=TIMESTAMP},
+			<if test="sender != null">
+				#{sender,jdbcType=VARCHAR},
 			</if>
-			<if test="mId != null">
-				#{mId,jdbcType=INTEGER},
+			<if test="receiverId != null">
+				#{receiverId,jdbcType=INTEGER},
+			</if>
+			<if test="seTime != null">
+				#{seTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="statu != null">
+				#{statu,jdbcType=INTEGER},
 			</if>
 		</trim>
 	</insert>
@@ -159,14 +173,20 @@
 	<update id="updateByExampleSelective" parameterType="map">
 		update log
 		<set>
-			<if test="record.lId != null">
-				l_id = #{record.lId,jdbcType=INTEGER},
+			<if test="record.id != null">
+				id = #{record.id,jdbcType=INTEGER},
 			</if>
-			<if test="record.opTime != null">
-				op_time = #{record.opTime,jdbcType=TIMESTAMP},
+			<if test="record.sender != null">
+				sender = #{record.sender,jdbcType=VARCHAR},
 			</if>
-			<if test="record.mId != null">
-				m_id = #{record.mId,jdbcType=INTEGER},
+			<if test="record.receiverId != null">
+				receiver_id = #{record.receiverId,jdbcType=INTEGER},
+			</if>
+			<if test="record.seTime != null">
+				se_time = #{record.seTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="record.statu != null">
+				statu = #{record.statu,jdbcType=INTEGER},
 			</if>
 		</set>
 		<if test="_parameter != null">
@@ -175,11 +195,15 @@
 	</update>
 	<update id="updateByExample" parameterType="map">
 		update log
-		set l_id = #{record.lId,jdbcType=INTEGER},
-		op_time =
-		#{record.opTime,jdbcType=TIMESTAMP},
-		m_id =
-		#{record.mId,jdbcType=INTEGER}
+		set id = #{record.id,jdbcType=INTEGER},
+		sender =
+		#{record.sender,jdbcType=VARCHAR},
+		receiver_id =
+		#{record.receiverId,jdbcType=INTEGER},
+		se_time =
+		#{record.seTime,jdbcType=TIMESTAMP},
+		statu =
+		#{record.statu,jdbcType=INTEGER}
 		<if test="_parameter != null">
 			<include refid="Update_By_Example_Where_Clause" />
 		</if>
@@ -188,20 +212,30 @@
 		parameterType="com.aisino.pojo.Log">
 		update log
 		<set>
-			<if test="opTime != null">
-				op_time = #{opTime,jdbcType=TIMESTAMP},
+			<if test="sender != null">
+				sender = #{sender,jdbcType=VARCHAR},
 			</if>
-			<if test="mId != null">
-				m_id = #{mId,jdbcType=INTEGER},
+			<if test="receiverId != null">
+				receiver_id = #{receiverId,jdbcType=INTEGER},
+			</if>
+			<if test="seTime != null">
+				se_time = #{seTime,jdbcType=TIMESTAMP},
+			</if>
+			<if test="statu != null">
+				statu = #{statu,jdbcType=INTEGER},
 			</if>
 		</set>
-		where l_id = #{lId,jdbcType=INTEGER}
+		where id = #{id,jdbcType=INTEGER}
 	</update>
 	<update id="updateByPrimaryKey"
 		parameterType="com.aisino.pojo.Log">
 		update log
-		set op_time = #{opTime,jdbcType=TIMESTAMP},
-		m_id = #{mId,jdbcType=INTEGER}
-		where l_id = #{lId,jdbcType=INTEGER}
+		set sender = #{sender,jdbcType=VARCHAR},
+		receiver_id = #{receiverId,jdbcType=INTEGER},
+		se_time =
+		#{seTime,jdbcType=TIMESTAMP},
+		statu = #{statu,jdbcType=INTEGER}
+		where id
+		= #{id,jdbcType=INTEGER}
 	</update>
 </mapper>

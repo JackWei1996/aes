@@ -3,33 +3,53 @@ package com.aisino.pojo;
 import java.util.Date;
 
 public class Log {
-    private Integer lId;
+    private Integer id;
 
-    private Date opTime;
+    private String sender;
 
-    private Integer mId;
+    private Integer receiverId;
 
-    public Integer getlId() {
-        return lId;
+    private Date seTime;
+
+    private Integer statu;
+
+    public Integer getId() {
+        return id;
     }
 
-    public void setlId(Integer lId) {
-        this.lId = lId;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public Date getOpTime() {
-        return opTime;
+    public String getSender() {
+        return sender;
     }
 
-    public void setOpTime(Date opTime) {
-        this.opTime = opTime;
+    public void setSender(String sender) {
+        this.sender = sender == null ? null : sender.trim();
     }
 
-    public Integer getmId() {
-        return mId;
+    public Integer getReceiverId() {
+        return receiverId;
     }
 
-    public void setmId(Integer mId) {
-        this.mId = mId;
+    public void setReceiverId(Integer receiverId) {
+        this.receiverId = receiverId;
+    }
+
+    public Date getSeTime() {
+        return seTime;
+    }
+
+    public void setSeTime(Date seTime) {
+        this.seTime = seTime;
+    }
+
+    public Integer getStatu() {
+        return statu;
+    }
+
+    public void setStatu(Integer statu) {
+        this.statu = statu;
     }
 }
