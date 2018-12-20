@@ -102,10 +102,10 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.aisino.pojo.Receiver" >
-    insert into receiver (id, project_name, e_mail, 
+    insert into receiver (project_name, e_mail, 
       title, content, adjunct, 
       cc)
-    values (#{id,jdbcType=INTEGER}, #{projectName,jdbcType=VARCHAR}, #{eMail,jdbcType=VARCHAR}, 
+    values ( #{projectName,jdbcType=VARCHAR}, #{eMail,jdbcType=VARCHAR}, 
       #{title,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, #{adjunct,jdbcType=VARCHAR}, 
       #{cc,jdbcType=VARCHAR})
   </insert>
