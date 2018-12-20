@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<!-- 加载外部属性配置文件 -->
+	<context:property-placeholder
+		location="classpath:db.properties" />
+	<!-- 配置数据源 -->
+	<bean id="dataSource"
+		class="com.alibaba.druid.pool.DruidDataSource">
+		<property name="url" value="${mysql.url}"></property>
+		<property name="username" value="${mysql.username}"></property>
+		<property name="password" value="${mysql.password}"></property>
+		<property name="driverClassName"
+			value="${mysql.driverClassName}"></property>
+	</bean>
+
+	<!-- 配置sqlSessionFactory -->
+	<bean id="sqlSessionFactory"
+		class="org.mybatis.spring.SqlSessionFactoryBean">
+		<!-- 配置数据源 -->
+		<property name="dataSource" ref="dataSource"></property>
+		<!-- 配置mybatis全局配置文件 -->
+		<property name="configLocation"
+			value="classpath:mybatis/sqlMapConfig.xml"></property>
+	</bean>
+
+	<!-- 配置mapper文件的扫描器 -->
+	<bean id="mapperScannerConfigurer"
+		class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<!-- 配置需要扫描哪些包及其子包下的映射文件 -->
+		<property name="basePackage" value="com.aisino.mapper"></property>
+		<property name="sqlSessionFactoryBeanName"
+			value="sqlSessionFactory"></property>
+	</bean>
+</beans>
