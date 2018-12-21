@@ -10,6 +10,7 @@ package com.aisino.service.impl;
 
 import java.io.InputStream;
 
+import org.apache.log4j.Logger;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
@@ -46,6 +47,8 @@ public class Excel2DBImpl implements IExcel2DB {
 	@Autowired
 	private IReceiver iReceiver;
 	
+	private static Logger logger = Logger.getLogger(Excel2DBImpl.class);
+	
 	/**
 	 * @Override
 	 * @see com.aisino.service.IExcel2DB#receiverImport(org.springframework.web.multipart.MultipartFile) <BR>
@@ -62,13 +65,13 @@ public class Excel2DBImpl implements IExcel2DB {
 			String fileName = file.getOriginalFilename();
 			
 		    Workbook wb = null;
-		    String fileType = fileName.substring(fileName.lastIndexOf("."));  
+		    String fileType = fileName.substring(fileName.lastIndexOf('.'));  
 		    if((".xls").equals(fileType)){  
 		        wb = new HSSFWorkbook(in);  //2003-  
 		    }else if((".xlsx").equals(fileType)){  
 		       wb = new XSSFWorkbook(in);  //2007+  
 		    }else{  
-		    	System.out.println("导入文件格式有问题");
+		    	logger.error("导入Excel文件格式有问题");
 		    }   		  
 		    //得到sheet  
 		    Sheet sheet = wb.getSheetAt(0); //默认取第一个sheet 	         
@@ -116,8 +119,8 @@ public class Excel2DBImpl implements IExcel2DB {
 		    }
 		    wb.close();
 		    in.close();
-		    System.out.println("顺利导入");
 		}catch (Exception e) {
+			logger.error(e.getMessage());
 			return false;
 		}
 		return true;

@@ -8,7 +8,6 @@
  */
 package com.aisino.task;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Properties;
@@ -25,6 +24,7 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 import javax.mail.internet.MimeUtility;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
@@ -54,21 +54,22 @@ public class MyTask {
 	@Autowired
 	private ILog iLog;
 	
+	private static Logger logger = Logger.getLogger(MyTask.class);
+	
 	/**
 	 * Method name: myTask <BR>
 	 * Description: 每隔XX时间定时发送任务 <BR>
 	 * Remark: <BR>  void<BR>
 	 */
-	@Scheduled(cron = "0/5 * * * * ?")  //每隔5秒执行一次定时任务
+	@Scheduled(cron = "0/10 * * * * ?")  //每隔5秒执行一次定时任务
     public void myTask(){
 		//从数据库获取接收人信息
-        List<Receiver> receivers = new ArrayList<>();
-		receivers = iReceiver.queryAllReceiver();
+        List<Receiver> receivers = iReceiver.queryAllReceiver();
 		//从配置文件中获取发送人信息
 		Sender sender = new Sender();
-		sender.setName(PropertyUtil.getConfigureProperties("name"));
-		sender.setEmail(PropertyUtil.getConfigureProperties("email"));
-		sender.setPass(PropertyUtil.getConfigureProperties("pass"));
+		sender.setName(PropertyUtil.getValue("name"));
+		sender.setEmail(PropertyUtil.getValue("email"));
+		sender.setPass(PropertyUtil.getValue("pass"));
 		//发送邮件
 		sendMail(sender, receivers);
     }
@@ -114,9 +115,13 @@ public class MyTask {
 				if(receiver.getCc()!=null&&!receiver.getCc().equals("")) {
 					String str = receiver.getCc();
 					String[] ccs = str.split(";");
-					for (String cc : ccs) {						
-						msg.setRecipients(RecipientType.CC, InternetAddress.parse(MimeUtility.encodeText("抄送人") + " <"+cc+">"));
+					String ccText = "";
+					for (String cc : ccs) {
+						String name = cc;
+						ccText += MimeUtility.encodeText(name) + " <"+cc+">,";
 					}
+					logger.error(ccText.substring(0,ccText.length()-1));
+					msg.setRecipients(RecipientType.CC, InternetAddress.parse(ccText.substring(0,ccText.length()-1)));
 				}
 				
 				//整封邮件的MINE消息体--向multipart对象中添加邮件的各个部分内容，包括文本内容和附件
@@ -157,20 +162,21 @@ public class MyTask {
 				transport.connect("smtp."+server+".com", 25, se[0], sendPass);
 				transport.sendMessage(msg, msg.getAllRecipients());
 				transport.close();
-				System.out.println("发送成功");
+				logger.info("发送成功");
 				//日志里面增加发送成功
 				log.setReceiverId(receiver.getId());
 				log.setSender(sendEmail);
 				log.setSeTime(date);
 				log.setStatu(1);
 			} catch (Exception e) {//日志里面增加发送失败
-				System.out.println("发送失败");
+				logger.error("发送失败");
+				logger.error(e.getMessage());
 				log.setReceiverId(receiver.getId());
 				log.setSender(sendEmail);
 				if(date==null) {
 					date = new Date();
-					log.setSeTime(date);
 				}
+				log.setSeTime(date);
 				log.setStatu(2);
 			}finally {
 				if(log.getStatu()!=1 && log.getStatu()!=2) {//日志里面增加发送异常
@@ -178,8 +184,8 @@ public class MyTask {
 					log.setSender(sendEmail);
 					if(date==null) {
 						date = new Date();
-						log.setSeTime(date);
 					}
+					log.setSeTime(date);
 					log.setStatu(3);
 				}
 				iLog.addLog(log);

@@ -5,9 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.aisino.mapper.LogMapper;
 import com.aisino.mapper.ReceiverMapper;
-import com.aisino.pojo.Log;
 import com.aisino.pojo.Receiver;
 import com.aisino.service.IReceiver;
 

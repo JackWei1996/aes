@@ -1,11 +1,6 @@
 package com.aisino.controller;
 
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
-
-import javax.servlet.http.HttpServletResponse;
-
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
@@ -14,18 +9,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.aisino.pojo.Log;
-import com.aisino.pojo.Receiver;
 import com.aisino.service.IExcel2DB;
-import com.aisino.service.ILog;
-import com.aisino.service.IReceiver;
+
 
 @Component
 @Controller
 public class LogController {
 	
-	@Autowired
-	private IExcel2DB excel2db;
 	
 	/**
 	 * Method name: uploadAjax <BR>
@@ -34,13 +24,19 @@ public class LogController {
 	 * @param file
 	 * @return  String<BR>
 	 */
+	@Autowired
+	private IExcel2DB excel2db;
+	
+	private static Logger logger = Logger.getLogger(LogController.class);
+	
 	@ResponseBody
 	@RequestMapping("/uploadAjax")
 	public String uploadAjax(@RequestParam("file") MultipartFile file) {
-		
+		logger.info("收件人导入数据库操作");
 		boolean flag = excel2db.receiverImport(file);
 		
 		if(flag) {//导入成功
+			logger.info("收件人导入数据库操作成功:)");
 			return "{\r\n" + 
 					"  \"code\": 0\r\n" + 
 					"  ,\"msg\": \"success\"\r\n" + 
@@ -50,6 +46,7 @@ public class LogController {
 					"} ";
 		}
 		//导入失败
+		logger.error("收件人导入数据库操作失败:(");
 		return "{\r\n" + 
 					"  \"code\": -1\r\n" + 
 					"  ,\"msg\": \"error\"\r\n" + 
