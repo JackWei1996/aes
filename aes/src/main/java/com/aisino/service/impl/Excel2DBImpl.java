@@ -89,22 +89,22 @@ public class Excel2DBImpl implements IExcel2DB {
 		        
 		        Row row =sheet.getRow(j);
 		        if (row != null && row.getCell(1)!=null) {
-		        	projectName = row.getCell(1).toString();
+		        	projectName = row.getCell(1).toString().trim();
 		        }
 		        if (row != null && row.getCell(2)!=null) {
-		        	eMail = row.getCell(2).toString();
+		        	eMail = row.getCell(2).toString().trim();
 		        }
 		        if (row != null && row.getCell(3)!=null) {
-		        	title = row.getCell(3).toString();
+		        	title = row.getCell(3).toString().trim();
 		        }
 		        if (row != null && row.getCell(4)!=null) {
-		        	content = row.getCell(4).toString();
+		        	content = row.getCell(4).toString().trim();
 		        }
 		        if (row != null && row.getCell(5)!=null) {
-		        	adjunct = row.getCell(5).toString();
+		        	adjunct = row.getCell(5).toString().trim();
 		        }
 		        if (row != null && row.getCell(6)!=null) {
-		        	cc = row.getCell(6).toString();
+		        	cc = row.getCell(6).toString().trim();
 		        }
 		        
 		        Receiver receiver = new Receiver();

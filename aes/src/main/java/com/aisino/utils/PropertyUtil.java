@@ -1,5 +1,6 @@
 package com.aisino.utils;
 
+import java.io.InputStreamReader;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
@@ -32,7 +33,9 @@ public class PropertyUtil {
 	 */
 	public static String getValue(String name) {
 		try {
-			property.load(PropertyUtil.class.getClassLoader().getResourceAsStream(CONFIGURE_LOCATION));
+			//设置UTF-8编码
+			InputStreamReader in = new InputStreamReader(PropertyUtil.class.getClassLoader().getResourceAsStream(CONFIGURE_LOCATION), "UTF-8");
+			property.load(in);
 			String result = property.getProperty(name);
 			if (null != result && !"".equalsIgnoreCase(result)) {
 				return result.trim();
