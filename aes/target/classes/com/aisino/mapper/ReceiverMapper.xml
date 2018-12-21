@@ -71,6 +71,10 @@
   <sql id="Base_Column_List" >
     id, project_name, e_mail, title, content, adjunct, cc
   </sql>
+  <select id="queryAllReceiver" resultMap="BaseResultMap">
+		select * from receiver;
+  </select>
+	
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.aisino.pojo.ReceiverExample" >
     select
     <if test="distinct" >

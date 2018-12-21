@@ -20,7 +20,7 @@ import com.aisino.pojo.Receiver;
  * @author Aisino)weihaohao
  */
 public interface IReceiver {
-	List<Receiver> queryAllLog();
+	public List<Receiver> queryAllReceiver();
 
-	int addReceiver(Receiver receiver);
+	public int addReceiver(Receiver receiver);
 }

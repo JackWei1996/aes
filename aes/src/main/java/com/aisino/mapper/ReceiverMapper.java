@@ -6,6 +6,8 @@ import java.util.List;
 import org.apache.ibatis.annotations.Param;
 
 public interface ReceiverMapper {
+	List<Receiver> queryAllReceiver();
+	
     int countByExample(ReceiverExample example);
 
     int deleteByExample(ReceiverExample example);

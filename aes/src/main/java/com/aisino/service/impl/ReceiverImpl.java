@@ -17,13 +17,12 @@ public class ReceiverImpl implements IReceiver {
 	private ReceiverMapper receiverMapper;
 
 	@Override
-	public List<Receiver> queryAllLog() {
-		return null;
+	public List<Receiver> queryAllReceiver() {
+		return receiverMapper.queryAllReceiver();
 	}
 
 	@Override
 	public int addReceiver(Receiver receiver) {
 		return receiverMapper.insert(receiver);
 	}
-
 }
