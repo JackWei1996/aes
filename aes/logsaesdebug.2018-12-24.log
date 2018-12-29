@@ -1,0 +1,224 @@
+2018-12-24 14:05:25  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-24 14:05:27  [ pool-1-thread-1:1716 ] - [ ERROR ]  发送失败
+2018-12-24 14:05:27  [ pool-1-thread-1:1717 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:07:07  [ pool-2-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-24 14:07:14  [ pool-2-thread-1:7534 ] - [ ERROR ]  发送失败
+2018-12-24 14:07:14  [ pool-2-thread-1:7535 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:07:20  [ pool-2-thread-1:13001 ] - [ ERROR ]  发送失败
+2018-12-24 14:07:20  [ pool-2-thread-1:13002 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:07:28  [ pool-2-thread-1:21121 ] - [ ERROR ]  发送失败
+2018-12-24 14:07:28  [ pool-2-thread-1:21121 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:07:48  [ pool-2-thread-1:41477 ] - [ ERROR ]  发送失败
+2018-12-24 14:07:48  [ pool-2-thread-1:41477 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:07:55  [ PathWatcher@2a8f8555:48670 ] - [ INFO ]  {dataSource-1} closed
+2018-12-24 14:07:59  [ pool-3-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-24 14:08:15  [ pool-2-thread-1:68473 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:15  [ pool-2-thread-1:68473 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:16  [ pool-3-thread-1:17521 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:16  [ pool-3-thread-1:17521 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:34  [ PathWatcher@2a8f8555:35147 ] - [ INFO ]  {dataSource-1} closed
+2018-12-24 14:08:35  [ pool-3-thread-1:36449 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:35  [ pool-3-thread-1:36449 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:38  [ pool-4-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-24 14:08:38  [ pool-4-thread-1:809 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:38  [ pool-4-thread-1:809 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:39  [ pool-4-thread-1:1243 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:39  [ pool-4-thread-1:1243 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:40  [ pool-4-thread-1:2207 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:40  [ pool-4-thread-1:2207 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:40  [ pool-4-thread-1:2501 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:40  [ pool-4-thread-1:2501 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:41  [ pool-4-thread-1:3208 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:41  [ pool-4-thread-1:3208 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:41  [ pool-4-thread-1:3460 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:41  [ pool-4-thread-1:3460 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:42  [ pool-4-thread-1:4230 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:42  [ pool-4-thread-1:4230 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:42  [ pool-4-thread-1:4572 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:42  [ pool-4-thread-1:4573 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:43  [ pool-4-thread-1:5352 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:43  [ pool-4-thread-1:5352 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:43  [ pool-4-thread-1:5650 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:43  [ pool-4-thread-1:5650 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:44  [ pool-4-thread-1:6163 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:44  [ pool-4-thread-1:6163 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:44  [ pool-4-thread-1:6440 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:44  [ pool-4-thread-1:6440 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:45  [ pool-4-thread-1:7189 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:45  [ pool-4-thread-1:7189 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:45  [ pool-4-thread-1:7513 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:45  [ pool-4-thread-1:7513 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:46  [ pool-4-thread-1:8193 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:46  [ pool-4-thread-1:8193 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:46  [ pool-4-thread-1:8481 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:46  [ pool-4-thread-1:8481 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:47  [ pool-4-thread-1:9686 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:47  [ pool-4-thread-1:9686 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:48  [ pool-4-thread-1:10054 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:48  [ pool-4-thread-1:10054 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:49  [ pool-4-thread-1:11191 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:49  [ pool-4-thread-1:11191 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:49  [ pool-4-thread-1:11461 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:49  [ pool-4-thread-1:11461 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:50  [ pool-4-thread-1:12201 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:50  [ pool-4-thread-1:12201 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:50  [ pool-4-thread-1:12474 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:50  [ pool-4-thread-1:12474 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:51  [ pool-4-thread-1:13394 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:51  [ pool-4-thread-1:13394 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:51  [ pool-4-thread-1:13839 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:51  [ pool-4-thread-1:13839 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:52  [ pool-4-thread-1:14330 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:52  [ pool-4-thread-1:14330 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:52  [ pool-4-thread-1:14705 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:52  [ pool-4-thread-1:14705 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:53  [ pool-4-thread-1:15197 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:53  [ pool-4-thread-1:15198 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:53  [ pool-4-thread-1:15500 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:53  [ pool-4-thread-1:15500 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:54  [ pool-4-thread-1:16192 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:54  [ pool-4-thread-1:16192 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:54  [ pool-4-thread-1:16468 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:54  [ pool-4-thread-1:16468 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:55  [ pool-4-thread-1:17224 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:55  [ pool-4-thread-1:17225 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:55  [ pool-4-thread-1:17525 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:55  [ pool-4-thread-1:17525 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:56  [ pool-4-thread-1:18437 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:56  [ pool-4-thread-1:18437 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:57  [ pool-4-thread-1:19037 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:57  [ pool-4-thread-1:19037 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:58  [ pool-4-thread-1:20442 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:58  [ pool-4-thread-1:20442 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:58  [ pool-4-thread-1:20903 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:58  [ pool-4-thread-1:20903 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:59  [ pool-4-thread-1:21282 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:59  [ pool-4-thread-1:21282 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:08:59  [ pool-4-thread-1:21632 ] - [ ERROR ]  发送失败
+2018-12-24 14:08:59  [ pool-4-thread-1:21633 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:09:00  [ pool-4-thread-1:22334 ] - [ ERROR ]  发送失败
+2018-12-24 14:09:00  [ pool-4-thread-1:22334 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:09:00  [ pool-4-thread-1:22746 ] - [ ERROR ]  发送失败
+2018-12-24 14:09:00  [ pool-4-thread-1:22746 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:09:01  [ pool-4-thread-1:23449 ] - [ ERROR ]  发送失败
+2018-12-24 14:09:01  [ pool-4-thread-1:23450 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:09:02  [ pool-4-thread-1:23978 ] - [ ERROR ]  发送失败
+2018-12-24 14:09:02  [ pool-4-thread-1:23979 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:09:03  [ pool-4-thread-1:25386 ] - [ ERROR ]  发送失败
+2018-12-24 14:09:03  [ pool-4-thread-1:25386 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:09:03  [ pool-4-thread-1:25790 ] - [ ERROR ]  发送失败
+2018-12-24 14:09:03  [ pool-4-thread-1:25790 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:09:04  [ pool-4-thread-1:26352 ] - [ ERROR ]  发送失败
+2018-12-24 14:09:04  [ pool-4-thread-1:26352 ] - [ ERROR ]  535 Error: authentication failed
+
+2018-12-24 14:12:31  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-24 14:14:52  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-24 14:15:06  [ pool-1-thread-1:14349 ] - [ INFO ]  发送成功
+2018-12-24 14:19:11  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-24 14:19:14  [ pool-1-thread-1:3893 ] - [ INFO ]  发送成功
+2018-12-24 14:19:15  [ pool-1-thread-1:4482 ] - [ INFO ]  发送成功
+2018-12-24 14:22:57  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-24 14:23:09  [ pool-1-thread-1:12251 ] - [ INFO ]  发送成功
+2018-12-24 14:29:28  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-24 14:29:44  [ pool-1-thread-1:16889 ] - [ INFO ]  发送成功
+2018-12-24 15:43:36  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-24 15:44:01  [ pool-1-thread-1:24441 ] - [ ERROR ]  发送失败
+2018-12-24 15:44:01  [ pool-1-thread-1:24441 ] - [ ERROR ]  Couldn't connect to host, port: smtp.163.com, 25; timeout -1
+2018-12-24 15:44:44  [ pool-1-thread-1:67305 ] - [ INFO ]  发送成功
+2018-12-24 15:45:04  [ pool-1-thread-1:87841 ] - [ INFO ]  发送成功
+2018-12-24 15:45:29  [ pool-1-thread-1:112800 ] - [ INFO ]  发送成功
+2018-12-24 15:45:48  [ pool-1-thread-1:131382 ] - [ INFO ]  发送成功
+2018-12-24 15:55:56  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-24 15:55:56  [ pool-1-thread-1:563 ] - [ ERROR ]  发送失败
+2018-12-24 15:55:56  [ pool-1-thread-1:563 ] - [ ERROR ]  No provider for SMTP
+2018-12-24 15:55:56  [ pool-1-thread-1:610 ] - [ ERROR ]  发送失败
+2018-12-24 15:55:56  [ pool-1-thread-1:610 ] - [ ERROR ]  No provider for SMTP
+2018-12-24 15:55:57  [ pool-1-thread-1:904 ] - [ ERROR ]  发送失败
+2018-12-24 15:55:57  [ pool-1-thread-1:904 ] - [ ERROR ]  No provider for SMTP
+2018-12-24 15:55:57  [ pool-1-thread-1:943 ] - [ ERROR ]  发送失败
+2018-12-24 15:55:57  [ pool-1-thread-1:943 ] - [ ERROR ]  No provider for SMTP
+2018-12-24 15:55:58  [ pool-1-thread-1:1904 ] - [ ERROR ]  发送失败
+2018-12-24 15:55:58  [ pool-1-thread-1:1904 ] - [ ERROR ]  No provider for SMTP
+2018-12-24 15:55:58  [ pool-1-thread-1:1935 ] - [ ERROR ]  发送失败
+2018-12-24 15:55:58  [ pool-1-thread-1:1935 ] - [ ERROR ]  No provider for SMTP
+2018-12-24 15:55:59  [ pool-1-thread-1:2906 ] - [ ERROR ]  发送失败
+2018-12-24 15:55:59  [ pool-1-thread-1:2906 ] - [ ERROR ]  No provider for SMTP
+2018-12-24 15:55:59  [ pool-1-thread-1:3031 ] - [ ERROR ]  发送失败
+2018-12-24 15:55:59  [ pool-1-thread-1:3032 ] - [ ERROR ]  No provider for SMTP
+2018-12-24 15:56:00  [ pool-1-thread-1:3905 ] - [ ERROR ]  发送失败
+2018-12-24 15:56:00  [ pool-1-thread-1:3905 ] - [ ERROR ]  No provider for SMTP
+2018-12-24 15:56:00  [ pool-1-thread-1:3939 ] - [ ERROR ]  发送失败
+2018-12-24 15:56:00  [ pool-1-thread-1:3939 ] - [ ERROR ]  No provider for SMTP
+2018-12-24 15:56:01  [ pool-1-thread-1:4915 ] - [ ERROR ]  发送失败
+2018-12-24 15:56:01  [ pool-1-thread-1:4915 ] - [ ERROR ]  No provider for SMTP
+2018-12-24 15:56:01  [ pool-1-thread-1:4968 ] - [ ERROR ]  发送失败
+2018-12-24 15:56:01  [ pool-1-thread-1:4968 ] - [ ERROR ]  No provider for SMTP
+2018-12-24 15:56:02  [ pool-1-thread-1:5905 ] - [ ERROR ]  发送失败
+2018-12-24 15:56:02  [ pool-1-thread-1:5905 ] - [ ERROR ]  No provider for SMTP
+2018-12-24 15:56:02  [ pool-1-thread-1:5922 ] - [ ERROR ]  发送失败
+2018-12-24 15:56:02  [ pool-1-thread-1:5923 ] - [ ERROR ]  No provider for SMTP
+2018-12-24 15:56:03  [ pool-1-thread-1:6905 ] - [ ERROR ]  发送失败
+2018-12-24 15:56:03  [ pool-1-thread-1:6905 ] - [ ERROR ]  No provider for SMTP
+2018-12-24 15:56:03  [ pool-1-thread-1:6919 ] - [ ERROR ]  发送失败
+2018-12-24 15:56:03  [ pool-1-thread-1:6919 ] - [ ERROR ]  No provider for SMTP
+2018-12-24 15:56:04  [ pool-1-thread-1:7904 ] - [ ERROR ]  发送失败
+2018-12-24 15:56:04  [ pool-1-thread-1:7905 ] - [ ERROR ]  No provider for SMTP
+2018-12-24 15:56:04  [ pool-1-thread-1:7936 ] - [ ERROR ]  发送失败
+2018-12-24 15:56:04  [ pool-1-thread-1:7937 ] - [ ERROR ]  No provider for SMTP
+2018-12-24 16:00:47  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-24 16:01:07  [ pool-1-thread-1:20629 ] - [ INFO ]  发送成功
+2018-12-24 16:01:57  [ pool-1-thread-1:70103 ] - [ INFO ]  发送成功
+2018-12-24 16:03:00  [ qtp668301868-18:133107 ] - [ INFO ]  收件人导入数据库操作
+2018-12-24 16:03:00  [ qtp668301868-18:133775 ] - [ INFO ]  收件人导入数据库操作成功:)

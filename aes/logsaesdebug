@@ -1,0 +1,257 @@
+2018-12-27 08:29:43  [ pool-1-thread-1:0 ] - [ ERROR ]  1960486255553@qq.com
+2018-12-27 08:29:43  [ pool-1-thread-1:283 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 08:29:44  [ pool-1-thread-1:748 ] - [ ERROR ]  1960486255553@qq.com此邮箱无法发送!!!
+2018-12-27 08:45:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 08:47:07  [ pool-1-thread-1:127552 ] - [ ERROR ]  15751026295xxx@163.com
+2018-12-27 08:47:07  [ pool-1-thread-1:127682 ] - [ ERROR ]  15751026295xxx@163.com此邮箱无法发送!!!
+2018-12-27 08:47:57  [ PathWatcher@4bf4680c:177002 ] - [ INFO ]  {dataSource-1} closed
+2018-12-27 08:55:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 08:55:02  [ pool-1-thread-1:2598 ] - [ ERROR ]  网络超时...
+2018-12-27 08:55:02  [ pool-1-thread-1:2644 ] - [ ERROR ]  网络超时...
+2018-12-27 08:55:02  [ pool-1-thread-1:2669 ] - [ ERROR ]  网络超时...
+2018-12-27 08:57:05  [ pool-1-thread-1:125057 ] - [ ERROR ]  
+2018-12-27 08:59:02  [ pool-1-thread-1:0 ] - [ ERROR ]  javax.mail.MessagingException;
+  nested exception is:
+	com.sun.mail.util.SocketConnectException
+2018-12-27 08:59:02  [ pool-1-thread-1:2 ] - [ ERROR ]  
+2018-12-27 09:01:02  [ pool-1-thread-1:0 ] - [ ERROR ]  javax.mail.MessagingException;
+  nested exception is:
+	com.sun.mail.util.SocketConnectException
+2018-12-27 09:01:02  [ pool-1-thread-1:3 ] - [ ERROR ]  
+2018-12-27 09:03:02  [ pool-1-thread-1:0 ] - [ ERROR ]  网络超时,无法扫描邮件!
+2018-12-27 09:03:02  [ pool-1-thread-1:2 ] - [ ERROR ]  javax.mail.MessagingException;
+  nested exception is:
+	com.sun.mail.util.SocketConnectException
+2018-12-27 09:03:02  [ pool-1-thread-1:3 ] - [ ERROR ]  
+2018-12-27 09:12:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 09:12:00  [ pool-1-thread-1:359 ] - [ ERROR ]  Empty address
+2018-12-27 09:23:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 09:23:00  [ pool-1-thread-1:307 ] - [ ERROR ]  发送人邮箱为空=.=!
+2018-12-27 09:28:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 09:28:00  [ pool-1-thread-1:286 ] - [ ERROR ]  javax.mail.internet.AddressException: Empty address in string ``''
+2018-12-27 09:28:00  [ pool-1-thread-1:286 ] - [ ERROR ]  发送人邮箱为空=.=!
+2018-12-27 09:28:02  [ pool-1-thread-1:2050 ] - [ ERROR ]  java.lang.NullPointerException
+2018-12-27 09:36:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 09:36:00  [ pool-1-thread-1:304 ] - [ ERROR ]  javax.mail.internet.AddressException: Empty address in string ``''
+2018-12-27 09:36:00  [ pool-1-thread-1:305 ] - [ ERROR ]  发送人邮箱为空=.=!
+2018-12-27 09:36:02  [ pool-1-thread-1:1935 ] - [ ERROR ]  java.lang.NullPointerException
+2018-12-27 09:42:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 09:42:00  [ pool-1-thread-1:273 ] - [ ERROR ]  javax.mail.internet.AddressException: Empty address in string ``''
+2018-12-27 09:42:00  [ pool-1-thread-1:274 ] - [ ERROR ]  发送人邮箱为空=.=!
+2018-12-27 09:42:02  [ pool-1-thread-1:2402 ] - [ ERROR ]  java.lang.NullPointerException
+2018-12-27 09:42:02  [ pool-1-thread-1:2402 ] - [ ERROR ]  发送内容为空0.0
+2018-12-27 09:50:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 09:50:00  [ pool-1-thread-1:323 ] - [ ERROR ]  发送人邮箱为空=.=!
+2018-12-27 09:50:02  [ pool-1-thread-1:2674 ] - [ ERROR ]  网络超时......
+2018-12-27 09:50:02  [ pool-1-thread-1:2710 ] - [ ERROR ]  网络超时......
+2018-12-27 09:50:02  [ pool-1-thread-1:2751 ] - [ ERROR ]  发送内容为空0.0
+2018-12-27 09:52:09  [ pool-1-thread-1:129602 ] - [ ERROR ]  网络超时,无法扫描邮件!
+2018-12-27 09:55:00  [ pool-1-thread-1:299920 ] - [ ERROR ]  发送人邮箱为空=.=!
+2018-12-27 09:55:01  [ pool-1-thread-1:301875 ] - [ ERROR ]  发送内容为空0.0
+2018-12-27 09:57:12  [ pool-1-thread-1:432845 ] - [ ERROR ]  @.@被退回的邮件有：15751026295xxx@163.com,1960486259999999993@qq.com,1960486259999999993@qq.com,1960486259999999993@qq.com,1960486259999999993@qq.com
+2018-12-27 09:57:13  [ pool-1-thread-1:432918 ] - [ ERROR ]  15751026295xxx@163.com此邮箱无法发送!!!
+2018-12-27 10:06:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 10:06:00  [ pool-1-thread-1:439 ] - [ ERROR ]  发送人邮箱为空=.=!
+2018-12-27 10:06:05  [ pool-1-thread-1:5634 ] - [ ERROR ]  发送内容为空0.0
+2018-12-27 10:07:11  [ pool-1-thread-1:71058 ] - [ ERROR ]  @.@被退回的邮件有：15751026295xxx@163.com,1960486259999999993@qq.com
+2018-12-27 10:07:11  [ pool-1-thread-1:71099 ] - [ ERROR ]  15751026295xxx@163.com此邮箱无法发送!!!
+2018-12-27 10:18:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 10:18:00  [ pool-1-thread-1:360 ] - [ ERROR ]  发送人邮箱为空=.=!
+2018-12-27 10:18:02  [ pool-1-thread-1:2100 ] - [ ERROR ]  发送内容为空0.0
+2018-12-27 10:19:06  [ pool-1-thread-1:66182 ] - [ ERROR ]  @.@被退回的邮件有：1960486259999999993@qq.com
+2018-12-27 10:24:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 10:24:00  [ pool-1-thread-1:321 ] - [ ERROR ]  发送人邮箱为空=.=!
+2018-12-27 10:24:02  [ pool-1-thread-1:2788 ] - [ ERROR ]  发送内容为空0.0
+2018-12-27 10:24:38  [ pool-1-thread-1:37956 ] - [ ERROR ]  @.@被退回的邮件有：1960486259999999993@qq.com,1960486259999999993@qq.com
+2018-12-27 10:24:51  [ PathWatcher@6615237:51253 ] - [ INFO ]  {dataSource-1} closed
+2018-12-27 10:26:04  [ pool-1-thread-1:0 ] - [ ERROR ]  @.@被退回的邮件有：1960486259999999993@qq.com,1960486259999999993@qq.com
+2018-12-27 10:26:05  [ pool-1-thread-1:131 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 10:26:05  [ pool-1-thread-1:361 ] - [ ERROR ]  Thu Dec 27 00:00:00 CST 2018
+2018-12-27 10:26:05  [ pool-1-thread-1:368 ] - [ ERROR ]  Thu Dec 27 00:00:00 CST 2018
+2018-12-27 10:34:01  [ pool-1-thread-1:0 ] - [ ERROR ]  @.@被退回的邮件有：
+2018-12-27 10:34:01  [ pool-1-thread-1:130 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 10:34:02  [ pool-1-thread-1:405 ] - [ ERROR ]  
+2018-12-27 10:34:02  [ pool-1-thread-1:406 ] - [ ERROR ]  java.lang.RuntimeException: Value for seTime cannot be null
+2018-12-27 10:42:01  [ pool-1-thread-1:0 ] - [ ERROR ]  @.@被退回的邮件有：
+2018-12-27 10:42:01  [ pool-1-thread-1:172 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 10:42:02  [ pool-1-thread-1:568 ] - [ ERROR ]  此邮箱无法发送!!!
+2018-12-27 10:42:02  [ pool-1-thread-1:601 ] - [ ERROR ]  此邮箱无法发送!!!
+2018-12-27 10:42:02  [ pool-1-thread-1:627 ] - [ ERROR ]  此邮箱无法发送!!!
+2018-12-27 10:42:02  [ pool-1-thread-1:643 ] - [ ERROR ]  此邮箱无法发送!!!
+2018-12-27 10:42:02  [ pool-1-thread-1:659 ] - [ ERROR ]  此邮箱无法发送!!!
+2018-12-27 10:42:02  [ pool-1-thread-1:676 ] - [ ERROR ]  此邮箱无法发送!!!
+2018-12-27 10:45:01  [ pool-1-thread-1:0 ] - [ INFO ]  扫描邮箱,没有退回邮件~
+2018-12-27 10:46:05  [ pool-1-thread-1:63386 ] - [ ERROR ]  @.@被退回的邮件有：1960486259999999993@qq.com,1960486259999999993@qq.com
+2018-12-27 10:46:05  [ pool-1-thread-1:63518 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 10:51:05  [ pool-1-thread-1:0 ] - [ ERROR ]  @.@被退回的邮件有：1960486259999999993@qq.com,1960486259999999993@qq.com
+2018-12-27 10:51:05  [ pool-1-thread-1:138 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 10:52:02  [ pool-1-thread-1:56766 ] - [ INFO ]  扫描邮箱,没有退回邮件~
+2018-12-27 10:52:02  [ PathWatcher@eaf8427:57047 ] - [ INFO ]  {dataSource-1} closed
+2018-12-27 10:53:11  [ pool-2-thread-1:0 ] - [ ERROR ]  @.@被退回的邮件有：1960486259999999993@qq.com,1960486259999999993@qq.com
+2018-12-27 10:53:11  [ pool-2-thread-1:110 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 10:53:11  [ pool-2-thread-1:351 ] - [ ERROR ]  查询结果10
+2018-12-27 10:53:11  [ pool-2-thread-1:352 ] - [ ERROR ]  查询结果20
+2018-12-27 10:53:11  [ pool-2-thread-1:355 ] - [ ERROR ]  查询结果10
+2018-12-27 10:53:11  [ pool-2-thread-1:355 ] - [ ERROR ]  查询结果20
+2018-12-27 10:54:52  [ pool-1-thread-1:0 ] - [ INFO ]  扫描邮箱,没有退回邮件~
+2018-12-27 10:54:55  [ pool-1-thread-1:2749 ] - [ INFO ]  扫描邮箱,没有退回邮件~
+2018-12-27 10:54:58  [ pool-1-thread-1:5776 ] - [ INFO ]  扫描邮箱,没有退回邮件~
+2018-12-27 10:55:01  [ pool-1-thread-1:8790 ] - [ INFO ]  扫描邮箱,没有退回邮件~
+2018-12-27 10:55:07  [ pool-1-thread-1:15009 ] - [ ERROR ]  @.@被退回的邮件有：1960486259999999993@qq.com,1960486259999999993@qq.com
+2018-12-27 10:55:07  [ pool-1-thread-1:15169 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 10:55:08  [ pool-1-thread-1:15480 ] - [ ERROR ]  1960486259999999993@qq.com
+2018-12-27 10:55:08  [ pool-1-thread-1:15480 ] - [ ERROR ]  查询结果------0
+2018-12-27 10:55:08  [ pool-1-thread-1:15480 ] - [ ERROR ]  查询结果+++++0
+2018-12-27 10:55:08  [ pool-1-thread-1:15483 ] - [ ERROR ]  1960486259999999993@qq.com
+2018-12-27 10:55:08  [ pool-1-thread-1:15483 ] - [ ERROR ]  查询结果------0
+2018-12-27 10:55:08  [ pool-1-thread-1:15483 ] - [ ERROR ]  查询结果+++++0
+2018-12-27 10:55:10  [ pool-1-thread-1:17759 ] - [ INFO ]  扫描邮箱,没有退回邮件~
+2018-12-27 11:01:35  [ pool-1-thread-1:0 ] - [ ERROR ]  @.@被退回的邮件有：15751026295xxx@163.com,1960486259999999993@qq.com
+2018-12-27 11:01:35  [ pool-1-thread-1:109 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 11:01:35  [ pool-1-thread-1:556 ] - [ ERROR ]  15751026295xxx@163.com此邮箱无法发送!!!
+2018-12-27 11:01:35  [ pool-1-thread-1:556 ] - [ ERROR ]  15751026295xxx@163.com
+2018-12-27 11:01:35  [ pool-1-thread-1:557 ] - [ ERROR ]  查询结果------1
+2018-12-27 11:01:35  [ pool-1-thread-1:557 ] - [ ERROR ]  查询结果+++++1
+2018-12-27 11:01:35  [ pool-1-thread-1:590 ] - [ ERROR ]  1960486259999999993@qq.com此邮箱无法发送!!!
+2018-12-27 11:01:35  [ pool-1-thread-1:590 ] - [ ERROR ]  1960486259999999993@qq.com
+2018-12-27 11:01:35  [ pool-1-thread-1:590 ] - [ ERROR ]  查询结果------0
+2018-12-27 11:01:35  [ pool-1-thread-1:590 ] - [ ERROR ]  查询结果+++++0
+2018-12-27 11:01:37  [ pool-1-thread-1:2472 ] - [ INFO ]  扫描邮箱,没有退回邮件~
+2018-12-27 11:03:11  [ pool-1-thread-1:0 ] - [ ERROR ]  @.@被退回的邮件有：15751026295xxx@163.com,1960486259999999993@qq.com
+2018-12-27 11:03:11  [ pool-1-thread-1:142 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 11:03:11  [ pool-1-thread-1:602 ] - [ ERROR ]  15751026295xxx@163.com此邮箱无法发送!!!
+2018-12-27 11:03:11  [ pool-1-thread-1:603 ] - [ ERROR ]  15751026295xxx@163.com
+2018-12-27 11:03:11  [ pool-1-thread-1:603 ] - [ ERROR ]  查询结果------1
+2018-12-27 11:03:11  [ pool-1-thread-1:603 ] - [ ERROR ]  查询结果+++++1
+2018-12-27 11:03:11  [ pool-1-thread-1:627 ] - [ ERROR ]  1960486259999999993@qq.com此邮箱无法发送!!!
+2018-12-27 11:03:11  [ pool-1-thread-1:627 ] - [ ERROR ]  1960486259999999993@qq.com
+2018-12-27 11:03:11  [ pool-1-thread-1:627 ] - [ ERROR ]  查询结果------0
+2018-12-27 11:03:11  [ pool-1-thread-1:627 ] - [ ERROR ]  查询结果+++++0
+2018-12-27 11:03:13  [ pool-1-thread-1:2265 ] - [ INFO ]  扫描邮箱,没有退回邮件~
+2018-12-27 13:20:00  [ pool-2-thread-1:1 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 13:20:00  [ pool-2-thread-1:716 ] - [ ERROR ]  Domain contains illegal character
+2018-12-27 13:20:03  [ pool-2-thread-1:3216 ] - [ ERROR ]  发送内容为空0.0
+2018-12-27 13:22:07  [ pool-2-thread-1:126888 ] - [ ERROR ]  @.@被退回的邮件有：1960486259999999993@qq.com
+2018-12-27 13:22:07  [ pool-2-thread-1:127108 ] - [ ERROR ]  1960486259999999993@qq.com此邮箱无法发送=[抄送人]
+2018-12-27 13:30:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 13:30:00  [ pool-1-thread-1:303 ] - [ ERROR ]  SSS@@163..com@接收人地址错误@
+2018-12-27 13:30:02  [ pool-1-thread-1:2321 ] - [ ERROR ]  发送内容为空0.0
+2018-12-27 13:32:06  [ pool-1-thread-1:126639 ] - [ ERROR ]  @.@被退回的邮件有：15751026295xxx@163.com
+2018-12-27 13:32:06  [ pool-1-thread-1:126713 ] - [ ERROR ]  15751026295xxx@163.com此邮箱无法发送=[发送人]
+2018-12-27 13:34:24  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 13:34:24  [ pool-1-thread-1:280 ] - [ ERROR ]  SSS@@163..com@接收人地址有错误,详情请看log日志@
+2018-12-27 13:34:25  [ pool-1-thread-1:1061 ] - [ ERROR ]  553 Envolope sender mismatch with login user..
+
+2018-12-27 13:34:25  [ pool-1-thread-1:1617 ] - [ ERROR ]  553 Envolope sender mismatch with login user..
+
+2018-12-27 13:34:25  [ pool-1-thread-1:1666 ] - [ ERROR ]  发送内容为空0.0
+2018-12-27 13:41:21  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 13:41:21  [ pool-1-thread-1:262 ] - [ ERROR ]  SSS@@163..com@接收人地址有错误,发送失败@
+2018-12-27 13:41:23  [ pool-1-thread-1:1931 ] - [ ERROR ]  553 Envolope sender mismatch with login user..
+
+2018-12-27 13:41:23  [ pool-1-thread-1:2524 ] - [ ERROR ]  553 Envolope sender mismatch with login user..
+
+2018-12-27 13:41:23  [ pool-1-thread-1:2552 ] - [ ERROR ]  失败！发送内容为空0.0
+2018-12-27 13:42:12  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 13:42:12  [ pool-1-thread-1:342 ] - [ ERROR ]  SSS@@163..com@接收人地址有错误,发送失败@
+2018-12-27 13:42:13  [ pool-1-thread-1:1511 ] - [ ERROR ]  553 Envolope sender mismatch with login user..
+
+2018-12-27 13:42:14  [ pool-1-thread-1:2640 ] - [ ERROR ]  553 Envolope sender mismatch with login user..
+
+2018-12-27 13:42:14  [ pool-1-thread-1:2672 ] - [ ERROR ]  失败！发送内容为空0.0
+2018-12-27 13:42:57  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 13:42:57  [ pool-1-thread-1:300 ] - [ ERROR ]  SSS@@163..com@接收人地址有错误,发送失败@
+2018-12-27 13:42:58  [ pool-1-thread-1:1007 ] - [ ERROR ]  553 Envolope sender mismatch with login user..
+
+2018-12-27 13:42:59  [ pool-1-thread-1:1949 ] - [ ERROR ]  553 Envolope sender mismatch with login user..
+
+2018-12-27 13:42:59  [ pool-1-thread-1:2038 ] - [ ERROR ]  失败！发送内容为空0.0
+2018-12-27 13:45:12  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 13:45:12  [ pool-1-thread-1:283 ] - [ ERROR ]  SSS@@163..com@接收人地址有错误,发送失败@
+2018-12-27 13:45:13  [ pool-1-thread-1:1307 ] - [ ERROR ]  553 Envolope sender mismatch with login user..
+
+2018-12-27 13:45:14  [ pool-1-thread-1:2565 ] - [ ERROR ]  553 Envolope sender mismatch with login user..
+
+2018-12-27 13:45:14  [ pool-1-thread-1:2606 ] - [ ERROR ]  失败！发送内容为空0.0
+2018-12-27 13:48:30  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 13:48:30  [ pool-1-thread-1:273 ] - [ ERROR ]  SSS@@163..com@接收人地址有错误,发送失败@
+2018-12-27 13:48:31  [ pool-1-thread-1:1044 ] - [ ERROR ]  535 5.7.8 authentication failed
+
+2018-12-27 13:48:32  [ pool-1-thread-1:2211 ] - [ ERROR ]  535 5.7.8 authentication failed
+
+2018-12-27 13:48:32  [ pool-1-thread-1:2223 ] - [ ERROR ]  失败！发送内容为空0.0
+2018-12-27 13:51:15  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 13:51:15  [ pool-1-thread-1:240 ] - [ ERROR ]  SSS@@163..com@接收人地址有错误,发送失败@
+2018-12-27 13:51:16  [ pool-1-thread-1:1006 ] - [ ERROR ]  535 5.7.8 authentication failed
+
+2018-12-27 13:51:17  [ pool-1-thread-1:2211 ] - [ ERROR ]  535 5.7.8 authentication failed
+
+2018-12-27 13:51:17  [ pool-1-thread-1:2250 ] - [ ERROR ]  失败！发送内容为空0.0
+2018-12-27 13:58:51  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-27 13:58:51  [ pool-1-thread-1:440 ] - [ ERROR ]  SSS@@163..com@接收人地址有错误,发送失败@
+2018-12-27 13:58:52  [ pool-1-thread-1:1282 ] - [ ERROR ]  <发送人授权密码错误，请修改配置文件>
+2018-12-27 13:58:54  [ pool-1-thread-1:2899 ] - [ ERROR ]  <发送人授权密码错误，请修改配置文件>
+2018-12-27 13:58:54  [ pool-1-thread-1:2955 ] - [ ERROR ]  失败！发送内容为空0.0
+2018-12-27 14:05:09 [0]-[INFO] {dataSource-1} inited
+2018-12-27 14:05:09 [323]-[ERROR] SSS@@163..com@接收人地址有错误,发送失败@
+2018-12-27 14:05:10 [1049]-[ERROR] <发送人授权密码错误，请修改配置文件>
+2018-12-27 14:05:11 [2027]-[ERROR] <发送人授权密码错误，请修改配置文件>
+2018-12-27 14:05:11 [2049]-[ERROR] 失败！发送内容为空0.0
+2018-12-27 14:11:39 [0]-[ERROR] ！发送时间配置出错，请修改配置文件！
+2018-12-27 14:16:09 [0]-[ERROR] ！发送时间配置出错，请修改配置文件！
+2018-12-27 14:16:51 [0]-[INFO] {dataSource-1} inited
+2018-12-27 14:16:51 [297]-[ERROR] SSS@@163..com@接收人地址有错误,发送失败@
+2018-12-27 14:16:52 [1660]-[ERROR] <发送人授权密码错误，请修改配置文件>
+2018-12-27 14:16:54 [3152]-[ERROR] <发送人授权密码错误，请修改配置文件>
+2018-12-27 14:16:54 [3184]-[ERROR] 失败！发送内容为空0.0
+2018-12-27 14:17:48 [1]-[INFO] {dataSource-1} inited
+2018-12-27 14:17:48 [272]-[ERROR] SSS@@163..com@接收人地址有错误,发送失败@
+2018-12-27 14:17:49 [1194]-[ERROR] <发送人授权密码错误，请修改配置文件>
+2018-12-27 14:17:49 [1701]-[ERROR] <发送人授权密码错误，请修改配置文件>
+2018-12-27 14:17:49 [1741]-[ERROR] 失败！发送内容为空0.0
+2018-12-27 14:17:51 [2917]-[ERROR] SSS@@163..com@接收人地址有错误,发送失败@
+2018-12-27 14:17:51 [3466]-[ERROR] <发送人授权密码错误，请修改配置文件>
+2018-12-27 14:17:52 [4099]-[ERROR] <发送人授权密码错误，请修改配置文件>
+2018-12-27 14:17:52 [4129]-[ERROR] 失败！发送内容为空0.0
+2018-12-27 14:17:54 [5917]-[ERROR] SSS@@163..com@接收人地址有错误,发送失败@
+2018-12-27 14:17:54 [6776]-[ERROR] <发送人授权密码错误，请修改配置文件>
+2018-12-27 14:17:55 [7405]-[ERROR] <发送人授权密码错误，请修改配置文件>
+2018-12-27 14:17:55 [7433]-[ERROR] 失败！发送内容为空0.0
+2018-12-27 14:19:27 [0]-[INFO] {dataSource-1} inited
+2018-12-27 14:19:27 [250]-[ERROR] SSS@@163..com@接收人地址有错误,发送失败@
+2018-12-27 14:19:28 [1682]-[ERROR] <发送人授权密码错误，请修改配置文件>
+2018-12-27 14:19:29 [2204]-[ERROR] <发送人授权密码错误，请修改配置文件>
+2018-12-27 14:19:29 [2238]-[ERROR] 失败！发送内容为空0.0
+2018-12-27 14:19:30 [2906]-[ERROR] SSS@@163..com@接收人地址有错误,发送失败@
+2018-12-27 14:21:27 [0]-[INFO] {dataSource-1} inited
+2018-12-27 14:21:27 [248]-[ERROR] SSS@@163..com@接收人地址有错误,发送失败@
+2018-12-27 14:21:30 [2921]-[ERROR] SSS@@163..com@接收人地址有错误,发送失败@
+2018-12-27 14:24:57 [0]-[INFO] {dataSource-1} inited
+2018-12-27 14:26:00 [0]-[INFO] {dataSource-1} inited
+2018-12-27 14:26:00 [298]-[ERROR] <发送人邮箱或者密码为空，请修改配置文件>
+2018-12-27 14:28:07 [127090]-[ERROR] javax.mail.AuthenticationFailedException: failed to connect, no password specified?
+2018-12-27 14:28:09 [128921]-[ERROR] <发送人邮箱或者密码为空，请修改配置文件>
+2018-12-27 14:32:09 [0]-[INFO] {dataSource-1} inited
+2018-12-27 14:32:09 [253]-[ERROR] SSS@@163..com@接收人地址有错误,发送失败@
+2018-12-27 14:32:11 [2122]-[ERROR] 失败！发送内容为空0.0
+2018-12-27 14:33:57 [0]-[INFO] {dataSource-1} inited
+2018-12-27 14:33:57 [306]-[ERROR] SSS@@163..com@接收人地址有错误,发送失败@
+2018-12-27 14:33:59 [2542]-[ERROR] 失败！发送内容为空0.0
+2018-12-27 15:37:33 [0]-[INFO] 收件人导入数据库操作
+2018-12-27 15:37:34 [1156]-[INFO] {dataSource-1} inited
+2018-12-27 15:37:36 [2934]-[INFO] 收件人导入数据库操作成功:)
+2018-12-27 15:37:53 [19500]-[INFO] 收件人导入数据库操作
+2018-12-27 15:37:53 [19551]-[INFO] 收件人导入数据库操作成功:)
+2018-12-27 15:39:01 [88181]-[INFO] 收件人导入数据库操作
+2018-12-27 15:39:01 [88233]-[INFO] 收件人导入数据库操作成功:)
+2018-12-27 15:39:27 [113767]-[INFO] 收件人导入数据库操作
+2018-12-27 15:39:27 [114057]-[INFO] 收件人导入数据库操作成功:)
+2018-12-27 15:40:00 [146505]-[ERROR] SSS@@163..com@接收人地址有错误,发送失败@
+2018-12-27 15:40:01 [148304]-[ERROR] 失败！发送内容为空0.0
+2018-12-27 15:40:06 [152814]-[ERROR] 15751026295@163.com@接收人地址有错误,发送失败@
+2018-12-27 15:42:17 [283619]-[ERROR] @.@被退回的邮件有：1960486259999999993@qq.com,22@163.co,1960486259999999993@qq.com,22@163.co,1960486259999999993@qq.com
+2018-12-27 15:42:17 [283768]-[ERROR] 1960486259999999993@qq.com此邮箱无法发送=[抄送人]
+2018-12-27 15:42:17 [283827]-[ERROR] 22@163.co此邮箱无法发送=[抄送人]
+2018-12-27 15:42:17 [283860]-[ERROR] 1960486259999999993@qq.com此邮箱无法发送=[抄送人]
+2018-12-27 15:42:17 [283910]-[ERROR] 22@163.co此邮箱无法发送=[抄送人]
+2018-12-27 15:42:17 [283947]-[ERROR] 1960486259999999993@qq.com此邮箱无法发送=[抄送人]

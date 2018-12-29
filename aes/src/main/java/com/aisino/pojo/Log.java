@@ -13,6 +13,8 @@ public class Log {
 
     private Integer statu;
 
+    private String detail;
+
     public Integer getId() {
         return id;
     }
@@ -51,5 +53,13 @@ public class Log {
 
     public void setStatu(Integer statu) {
         this.statu = statu;
+    }
+
+    public String getDetail() {
+        return detail;
+    }
+
+    public void setDetail(String detail) {
+        this.detail = detail == null ? null : detail.trim();
     }
 }

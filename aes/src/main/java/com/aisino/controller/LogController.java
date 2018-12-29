@@ -15,28 +15,26 @@ import com.aisino.service.IExcel2DB;
 @Component
 @Controller
 public class LogController {
-	
+	@Autowired
+	private IExcel2DB excel2db;
+	//打印日志
+	private static Logger logger = Logger.getLogger(LogController.class);
 	
 	/**
 	 * Method name: uploadAjax <BR>
-	 * Description: 从前台导入Excel到数据库 <BR>
+	 * Description: 前台请求后台导入数据库操作 <BR>
 	 * Remark: <BR>
 	 * @param file
 	 * @return  String<BR>
 	 */
-	@Autowired
-	private IExcel2DB excel2db;
-	
-	private static Logger logger = Logger.getLogger(LogController.class);
-	
 	@ResponseBody
 	@RequestMapping("/uploadAjax")
 	public String uploadAjax(@RequestParam("file") MultipartFile file) {
-		logger.info("收件人导入数据库操作");
+		logger.info(file.getOriginalFilename()+"--->"+"收件人Excel导入数据库操作");
 		boolean flag = excel2db.receiverImport(file);
 		
 		if(flag) {//导入成功
-			logger.info("收件人导入数据库操作成功:)");
+			logger.info(file.getOriginalFilename()+"--->"+"收件人Excel导入数据库操作成功:)");
 			return "{\r\n" + 
 					"  \"code\": 0\r\n" + 
 					"  ,\"msg\": \"success\"\r\n" + 
@@ -46,7 +44,6 @@ public class LogController {
 					"} ";
 		}
 		//导入失败
-		logger.error("收件人导入数据库操作失败:(");
 		return "{\r\n" + 
 					"  \"code\": -1\r\n" + 
 					"  ,\"msg\": \"error\"\r\n" + 

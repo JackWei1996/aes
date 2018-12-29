@@ -8,42 +8,28 @@
  */
 package com.aisino.task;
 
-import java.io.File;
-import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
+
 import java.util.Date;
 import java.util.List;
-import java.util.Properties;
-
-import javax.activation.DataHandler;
-import javax.activation.DataSource;
-import javax.activation.FileDataSource;
-import javax.mail.Message.RecipientType;
-import javax.mail.Session;
-import javax.mail.Transport;
-import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeBodyPart;
-import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
-import javax.mail.internet.MimeUtility;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.Trigger;
 import org.springframework.scheduling.TriggerContext;
 import org.springframework.scheduling.annotation.EnableScheduling;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.scheduling.annotation.SchedulingConfigurer;
 import org.springframework.scheduling.config.ScheduledTaskRegistrar;
 import org.springframework.scheduling.support.CronTrigger;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 
-import com.aisino.pojo.Log;
+import com.aisino.common.Constant;
+import com.aisino.common.ErrCode;
 import com.aisino.pojo.Receiver;
 import com.aisino.pojo.Sender;
-import com.aisino.service.ILog;
 import com.aisino.service.IReceiver;
+import com.aisino.service.IScanNDRMail;
+import com.aisino.service.ISendMail;
 import com.aisino.utils.PropertyUtil;
 
 /**
@@ -62,13 +48,15 @@ public class MyTask implements SchedulingConfigurer{
 	@Autowired
 	private IReceiver iReceiver;
 	@Autowired
-	private ILog iLog;
+	private ISendMail iSendMail;
+	@Autowired
+	private IScanNDRMail iScanNDRMail;
 	//定时发送时间
 	private static String rule;
-	//附件列表
-	private static List<File> files = null;
 	//打印日志
 	private static Logger logger = Logger.getLogger(MyTask.class);
+	//从何时开始修改日志
+	private  Date startDateTime = null;
 	/**定时规则
 	0 0 5-15 * * ? 每天5-15点整点触发
 	0 0/3 * * * ? 每三分钟触发一次
@@ -118,167 +106,12 @@ public class MyTask implements SchedulingConfigurer{
         List<Receiver> receivers = iReceiver.queryAllReceiver();
 		//从配置文件中获取发送人信息
 		Sender sender = new Sender();
-		sender.setName(PropertyUtil.getValue("name"));
-		sender.setEmail(PropertyUtil.getValue("email"));
-		sender.setPass(PropertyUtil.getValue("pass"));
+		sender.setName(PropertyUtil.getValue(Constant.SENDER_NAME));
+		sender.setEmail(PropertyUtil.getValue(Constant.SENDER_EMAIL));
+		sender.setPass(PropertyUtil.getValue(Constant.SENDER_PASSWORD));
 		//发送邮件
-		sendMail(sender, receivers);
+		startDateTime = iSendMail.sendMail(sender, receivers);
     }
-
-	/**
-	 * Method name: sendMail <BR>
-	 * Description: 发送邮件具体实现 <BR>
-	 * Remark: <BR>
-	 * @param sender发送人
-	 * @param receivers接收人  void<BR>
-	 */
-	private void sendMail(Sender sender, List<Receiver> receivers) {
-		String sendEmail = sender.getEmail();	//发送人Email
-		String sendName = sender.getName();		//发送人名称
-		String sendPass = sender.getPass();		//发送人密码
-		//遍历所有接收人
-		for (Receiver receiver : receivers) {
-			Log log = new Log();	//记录日志
-			Date date = null;		
-			try {
-				//新建配置文件
-				Properties props = new Properties();
-				// 发送服务器需要身份验证
-				props.setProperty("mail.smtp.auth", "true");
-				// 发送邮件协议名称
-				props.setProperty("mail.transport.protocol", "smtp");
-				Session session = Session.getInstance(props);
-				//开启调试模式,会在控制台打印发送过程
-				session.setDebug(true);
-				
-				//待发送的邮件
-				MimeMessage msg = new MimeMessage(session);
-				//发件人
-				msg.setFrom(new InternetAddress("\"" + MimeUtility.encodeText(sendName) + "\" <"+sendEmail+">"));
-				//设置邮件标题
-				msg.setSubject(receiver.getTitle().trim());
-				//发送内容
-				msg.setText(receiver.getContent().trim());
-				//设置接收人信息
-				
-				String rec = getList(receiver.geteMail().trim());
-				msg.setRecipients(RecipientType.TO,InternetAddress.parse(rec));
-				
-				//抄送人
-				if(receiver.getCc()!=null&&!receiver.getCc().equals("")) {
-					String str = getList(receiver.getCc().trim());
-					msg.setRecipients(RecipientType.CC, InternetAddress.parse(str));
-				}
-				
-				//整封邮件的MINE消息体--向multipart对象中添加邮件的各个部分内容，包括文本内容和附件
-				if(receiver.getAdjunct()!=null&&!receiver.getAdjunct().equals("")) {
-					MimeMultipart msgMultipart = new MimeMultipart("mixed");//混合的组合关系
-					MimeBodyPart htmlPart = new MimeBodyPart();	
-					msgMultipart.addBodyPart(htmlPart);
-					htmlPart.setContent(receiver.getContent().trim(), "text/html;charset=utf-8");
-					//设置邮件的MINE消息体
-					String str = receiver.getAdjunct();
-					String[] adjuncts = str.split("\\|");
-					for (String adjunct : adjuncts) {	
-					    String path = "D:\\upload\\"+adjunct.trim();		//要遍历的路径
-						File file = new File(path);		//获取其file对象
-						//logger.error(path);
-						files = new ArrayList<>();
-						func(file);	
-						
-						for (File f : files) {
-							//logger.error(f.getAbsolutePath());
-							MimeBodyPart attch = new MimeBodyPart();	// 附件
-							//附件数据源
-							DataSource ds = new FileDataSource(f);
-							DataHandler dh = new DataHandler(ds);
-							attch.setDataHandler(dh);
-							//String[] name = adjunct.split("\\\\");
-							attch.setFileName(MimeUtility.encodeText(f.getName()));
-							msgMultipart.addBodyPart(attch);		// 将附件添加到MIME消息体中
-						}
-						
-					}
-					
-					msg.setContent(msgMultipart);
-				}
-				// 发送日期
-				date = new Date();
-				msg.setSentDate(date);
-				
-				//保存改变
-				msg.saveChanges();
-				
-				//创建会话
-				Transport transport = session.getTransport();
-				//发送方---会话smtp服务器,端口号,用户名,密码
-				String[] se = sendEmail.split("@");
-				String server = se[1].split("\\.")[0].trim();
-				
-				transport.connect("smtp."+server+".com", 25, se[0], sendPass);
-				transport.sendMessage(msg, msg.getAllRecipients());
-				transport.close();
-				logger.info("发送成功");
-				//日志里面增加发送成功
-				log.setReceiverId(receiver.getId());
-				log.setSender(sendEmail);
-				log.setSeTime(date);
-				log.setStatu(1);
-			} catch (Exception e) {//日志里面增加发送失败
-				logger.error("发送失败");
-				logger.error(e.getMessage());
-				log.setReceiverId(receiver.getId());
-				log.setSender(sendEmail);
-				if(date==null) {
-					date = new Date();
-				}
-				log.setSeTime(date);
-				log.setStatu(2);
-			}finally {
-				if(log.getStatu()!=1 && log.getStatu()!=2) {//日志里面增加发送异常
-					log.setReceiverId(receiver.getId());
-					log.setSender(sendEmail);
-					if(date==null) {
-						date = new Date();
-					}
-					log.setSeTime(date);
-					log.setStatu(3);
-				}
-				iLog.addLog(log);
-			}
-		}
-	}
-
-	private static void func(File file){
-		if(file.isDirectory()) {			
-			File[] fs = file.listFiles();
-			for(File f:fs){
-				if(f.isDirectory())	//若是目录，则递归打印该目录下的文件
-					func(f);
-				if(f.isFile())		//若是文件，直接打印
-					files.add(f);
-			}
-		}else if(file.isFile()) {
-			files.add(file);
-		}
-	}
-
-	/**
-	 * Method name: getList <BR>
-	 * Description: 获取联系人列表 <BR>
-	 * Remark: <BR>
-	 * @param trim
-	 * @return
-	 * @throws UnsupportedEncodingException  String<BR>
-	 */
-	private String getList(String trim) throws UnsupportedEncodingException {
-		String[] ccs = trim.split(";");
-		String ccText = "";
-		for (String cc : ccs) {
-			ccText += MimeUtility.encodeText(cc.trim()) + " <"+cc.trim()+">,";
-		}
-		return ccText.substring(0,ccText.length()-1);
-	}
 
 	/**
 	 * @Override
@@ -290,19 +123,41 @@ public class MyTask implements SchedulingConfigurer{
 	*/
 	@Override
 	public void configureTasks(ScheduledTaskRegistrar taskRegistrar) {
-		rule = PropertyUtil.getValue("sendTime");
+		rule = PropertyUtil.getValue(Constant.SEND_TIME);
 		taskRegistrar.addTriggerTask(new Runnable() {
 			@Override
 			public void run() {
 				//执行我的任务
 				myTask();
+				try {
+					//配置延迟扫描邮件时间(毫秒)
+					int delay = Integer.parseInt(PropertyUtil.getValue(Constant.SCAN_DELAY_TIME));
+					if(delay==-1) {
+						return ;
+					}
+					Thread.sleep(delay);
+				} catch (InterruptedException e) {
+					logger.error(ErrCode.CONFIG_SCANTIME_ERR.getMsg());
+				}
+				//查看是否有退信
+				if(startDateTime==null) {//扫描开始时间为空
+					logger.error(ErrCode.SYSTEM_START_SCANTIME_ERR.getMsg());
+				}else {					
+					iScanNDRMail.scanNDR(startDateTime);
+				}
 			}
 		}, new Trigger() {
 			@Override
 			public Date nextExecutionTime(TriggerContext triggerContext) {
+				CronTrigger trigger = null;
+				Date nextExec = null;
 				// 任务触发，可修改任务的执行周期
-				CronTrigger trigger = new CronTrigger(rule);
-                Date nextExec = trigger.nextExecutionTime(triggerContext);
+				try {					
+					trigger = new CronTrigger(rule);
+					nextExec = trigger.nextExecutionTime(triggerContext);
+				} catch (Exception e) {
+					logger.error(ErrCode.CONFIG_SENDTIME_ERR.getMsg());
+				}
                 return nextExec;
 			}
 		});

@@ -1,0 +1,287 @@
+2018-12-26 09:53:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 09:53:11  [ qtp1498621286-15:11706 ] - [ INFO ]  收件人导入数据库操作
+2018-12-26 09:53:12  [ qtp1498621286-15:12272 ] - [ ERROR ]  
+### Error updating database.  Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'state' cannot be null
+### The error may involve com.aisino.mapper.ReceiverMapper.insert-Inline
+### The error occurred while setting parameters
+### SQL: insert into receiver (id, project_name, e_mail,        title, content, adjunct,        cc, state)     values (?, ?, ?,        ?, ?, ?,        ?, ?)
+### Cause: com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'state' cannot be null
+; ]; Column 'state' cannot be null; nested exception is com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Column 'state' cannot be null
+2018-12-26 09:53:12  [ qtp1498621286-15:12272 ] - [ ERROR ]  收件人导入数据库操作失败:(
+2018-12-26 10:00:54  [ qtp1331946439-19:0 ] - [ INFO ]  收件人导入数据库操作
+2018-12-26 10:00:55  [ qtp1331946439-19:680 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 10:00:56  [ qtp1331946439-19:1187 ] - [ INFO ]  收件人导入数据库操作成功:)
+2018-12-26 10:01:01  [ pool-1-thread-1:6157 ] - [ INFO ]  发送成功
+2018-12-26 10:01:02  [ pool-1-thread-1:7361 ] - [ INFO ]  发送成功
+2018-12-26 10:07:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 10:07:03  [ pool-1-thread-1:3587 ] - [ INFO ]  发送成功
+2018-12-26 10:07:04  [ pool-1-thread-1:4820 ] - [ INFO ]  发送成功
+2018-12-26 10:26:00  [ pool-1-thread-1:1 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 10:26:02  [ pool-1-thread-1:2595 ] - [ ERROR ]  发送失败
+2018-12-26 10:26:02  [ pool-1-thread-1:2596 ] - [ ERROR ]  Couldn't connect to host, port: smtp.sina.com, 25; timeout -1
+2018-12-26 10:26:02  [ pool-1-thread-1:2637 ] - [ ERROR ]  发送失败
+2018-12-26 10:26:02  [ pool-1-thread-1:2637 ] - [ ERROR ]  Couldn't connect to host, port: smtp.sina.com, 25; timeout -1
+2018-12-26 10:30:30  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 10:30:37  [ pool-1-thread-1:7056 ] - [ ERROR ]  发送失败
+2018-12-26 10:30:37  [ pool-1-thread-1:7056 ] - [ ERROR ]  com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.sina.com, 25; timeout -1;
+  nested exception is:
+	java.net.UnknownHostException: smtp.sina.com
+Couldn't connect to host, port: smtp.sina.com, 25; timeout -1
+2018-12-26 10:30:37  [ pool-1-thread-1:7056 ] - [ ERROR ]  网络超时
+2018-12-26 10:30:37  [ pool-1-thread-1:7097 ] - [ ERROR ]  发送失败
+2018-12-26 10:30:37  [ pool-1-thread-1:7097 ] - [ ERROR ]  com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.sina.com, 25; timeout -1;
+  nested exception is:
+	java.net.UnknownHostException: smtp.sina.com
+Couldn't connect to host, port: smtp.sina.com, 25; timeout -1
+2018-12-26 10:30:37  [ pool-1-thread-1:7097 ] - [ ERROR ]  网络超时
+2018-12-26 10:36:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 10:36:01  [ pool-1-thread-1:1098 ] - [ INFO ]  发送成功
+2018-12-26 10:36:02  [ pool-1-thread-1:2078 ] - [ INFO ]  发送成功
+2018-12-26 10:44:30  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 10:44:31  [ pool-1-thread-1:1626 ] - [ INFO ]  发送成功
+2018-12-26 10:44:32  [ pool-1-thread-1:2401 ] - [ ERROR ]  发送失败
+2018-12-26 10:44:32  [ pool-1-thread-1:2401 ] - [ ERROR ]  com.sun.mail.smtp.SMTPSendFailedException: 550 too many message send today.
+
+550 too many message send today.
+
+2018-12-26 10:49:05  [ pool-2-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 10:49:07  [ pool-2-thread-1:2609 ] - [ ERROR ]  发送失败
+2018-12-26 10:49:07  [ pool-2-thread-1:2610 ] - [ ERROR ]  com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.sina.com, 25; timeout -1;
+  nested exception is:
+	java.net.UnknownHostException: smtp.sina.com
+Couldn't connect to host, port: smtp.sina.com, 25; timeout -1
+2018-12-26 10:49:07  [ pool-2-thread-1:2610 ] - [ ERROR ]  网络超时
+2018-12-26 10:49:07  [ pool-2-thread-1:2655 ] - [ ERROR ]  发送失败
+2018-12-26 10:49:07  [ pool-2-thread-1:2655 ] - [ ERROR ]  com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.sina.com, 25; timeout -1;
+  nested exception is:
+	java.net.UnknownHostException: smtp.sina.com
+Couldn't connect to host, port: smtp.sina.com, 25; timeout -1
+2018-12-26 10:49:07  [ pool-2-thread-1:2655 ] - [ ERROR ]  网络超时
+2018-12-26 10:49:10  [ pool-2-thread-1:4921 ] - [ ERROR ]  发送失败
+2018-12-26 10:49:10  [ pool-2-thread-1:4921 ] - [ ERROR ]  com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.sina.com, 25; timeout -1;
+  nested exception is:
+	java.net.UnknownHostException: smtp.sina.com
+Couldn't connect to host, port: smtp.sina.com, 25; timeout -1
+2018-12-26 10:49:10  [ pool-2-thread-1:4921 ] - [ ERROR ]  网络超时
+2018-12-26 10:49:10  [ pool-2-thread-1:4968 ] - [ ERROR ]  发送失败
+2018-12-26 10:49:10  [ pool-2-thread-1:4968 ] - [ ERROR ]  com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.sina.com, 25; timeout -1;
+  nested exception is:
+	java.net.UnknownHostException: smtp.sina.com
+Couldn't connect to host, port: smtp.sina.com, 25; timeout -1
+2018-12-26 10:49:10  [ pool-2-thread-1:4968 ] - [ ERROR ]  网络超时
+2018-12-26 10:50:50  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 10:53:33  [ pool-1-thread-1:163074 ] - [ ERROR ]  发送失败
+2018-12-26 10:54:30  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 10:54:31  [ pool-1-thread-1:1636 ] - [ ERROR ]  发送失败
+2018-12-26 10:54:31  [ pool-1-thread-1:1636 ] - [ ERROR ]  com.sun.mail.smtp.SMTPSendFailedException: 550 too many message send today.
+
+550 too many message send today.
+
+2018-12-26 11:04:20  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 11:04:21  [ pool-1-thread-1:1500 ] - [ ERROR ]  发送失败
+2018-12-26 11:04:21  [ pool-1-thread-1:1500 ] - [ ERROR ]  com.sun.mail.smtp.SMTPSendFailedException: 550 too many message send today.
+
+550 too many message send today.
+
+2018-12-26 11:04:21  [ pool-1-thread-1:1501 ] - [ ERROR ]  今天发送次数太多了
+2018-12-26 11:04:22  [ pool-1-thread-1:2507 ] - [ ERROR ]  发送失败
+2018-12-26 11:04:22  [ pool-1-thread-1:2508 ] - [ ERROR ]  com.sun.mail.smtp.SMTPSendFailedException: 550 too many message send today.
+
+550 too many message send today.
+
+2018-12-26 11:04:22  [ pool-1-thread-1:2508 ] - [ ERROR ]  今天发送次数太多了
+2018-12-26 11:32:35  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 11:32:36  [ pool-1-thread-1:1399 ] - [ ERROR ]  发送失败
+2018-12-26 11:32:36  [ pool-1-thread-1:1399 ] - [ ERROR ]  com.sun.mail.smtp.SMTPSendFailedException: 550 too many message send today.
+
+550 too many message send today.
+
+2018-12-26 11:32:36  [ pool-1-thread-1:1400 ] - [ ERROR ]  今天发送次数太多了
+2018-12-26 11:32:37  [ pool-1-thread-1:2282 ] - [ ERROR ]  发送失败
+2018-12-26 11:32:37  [ pool-1-thread-1:2282 ] - [ ERROR ]  com.sun.mail.smtp.SMTPSendFailedException: 550 too many message send today.
+
+550 too many message send today.
+
+2018-12-26 11:32:37  [ pool-1-thread-1:2282 ] - [ ERROR ]  今天发送次数太多了
+2018-12-26 11:36:35  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 11:36:36  [ pool-1-thread-1:982 ] - [ INFO ]  发送成功
+2018-12-26 11:36:36  [ pool-1-thread-1:1485 ] - [ INFO ]  发送成功
+2018-12-26 11:37:45  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 11:37:46  [ pool-1-thread-1:1116 ] - [ INFO ]  发送成功
+2018-12-26 11:37:47  [ pool-1-thread-1:2782 ] - [ ERROR ]  发送失败
+2018-12-26 11:37:47  [ pool-1-thread-1:2782 ] - [ ERROR ]  javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550 User not found: 157510262922225@163.com
+
+Invalid Addresses
+2018-12-26 11:41:45  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 11:41:46  [ pool-1-thread-1:967 ] - [ INFO ]  发送成功
+2018-12-26 11:41:47  [ pool-1-thread-1:2330 ] - [ ERROR ]  发送失败
+2018-12-26 11:41:47  [ pool-1-thread-1:2330 ] - [ ERROR ]  javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550 User not found: 157510262922225@163.com
+
+Invalid Addresses
+2018-12-26 11:42:45  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 11:42:50  [ pool-1-thread-1:5124 ] - [ INFO ]  发送成功
+2018-12-26 11:42:52  [ pool-1-thread-1:7514 ] - [ ERROR ]  发送失败
+2018-12-26 11:42:52  [ pool-1-thread-1:7514 ] - [ ERROR ]  javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550 User not found: 157510262922225@163.com
+
+Invalid Addresses
+2018-12-26 11:42:55  [ pool-1-thread-1:10324 ] - [ INFO ]  发送成功
+2018-12-26 11:42:56  [ pool-1-thread-1:11713 ] - [ ERROR ]  发送失败
+2018-12-26 11:42:56  [ pool-1-thread-1:11713 ] - [ ERROR ]  javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550 User not found: 157510262922225@163.com
+
+Invalid Addresses
+2018-12-26 11:43:00  [ pool-1-thread-1:15353 ] - [ INFO ]  发送成功
+2018-12-26 11:43:01  [ pool-1-thread-1:16753 ] - [ ERROR ]  发送失败
+2018-12-26 11:43:01  [ pool-1-thread-1:16753 ] - [ ERROR ]  javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550 User not found: 157510262922225@163.com
+
+Invalid Addresses
+2018-12-26 11:45:40  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 11:46:05  [ pool-1-thread-1:24983 ] - [ INFO ]  发送成功
+2018-12-26 11:46:30  [ pool-1-thread-1:50352 ] - [ ERROR ]  发送失败
+2018-12-26 11:46:30  [ pool-1-thread-1:50352 ] - [ ERROR ]  javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550 User not found: 157510262922225@163.com
+
+Invalid Addresses
+2018-12-26 11:50:05  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 11:50:15  [ pool-1-thread-1:10667 ] - [ INFO ]  发送成功
+2018-12-26 11:50:21  [ pool-1-thread-1:16341 ] - [ ERROR ]  发送失败
+2018-12-26 11:50:21  [ pool-1-thread-1:16342 ] - [ ERROR ]  javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550 User not found: 157510262922225@163.com
+
+Invalid Addresses
+2018-12-26 11:50:21  [ pool-1-thread-1:16342 ] - [ ERROR ]  157510262922225@163.com接收人地址不合法!
+2018-12-26 11:54:10  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 11:54:10  [ pool-1-thread-1:887 ] - [ INFO ]  发送成功
+2018-12-26 11:54:12  [ pool-1-thread-1:2273 ] - [ ERROR ]  发送失败
+2018-12-26 11:54:12  [ pool-1-thread-1:2273 ] - [ ERROR ]  javax.mail.SendFailedException: Invalid Addresses;
+  nested exception is:
+	com.sun.mail.smtp.SMTPAddressFailedException: 550 User not found: 157510262922225@163.com
+
+Invalid Addresses
+2018-12-26 11:54:12  [ pool-1-thread-1:2273 ] - [ ERROR ]  157510262922225@163.com接收人地址不合法!
+2018-12-26 13:42:13  [ main:0 ] - [ ERROR ]  未找到要解析的邮件!
+2018-12-26 13:43:06  [ main:0 ] - [ INFO ]  55555@qq.com
+2018-12-26 13:44:19  [ main:0 ] - [ INFO ]  55555@qq.com,55555@qq.com
+2018-12-26 13:46:24  [ main:1 ] - [ INFO ]  55555@qq.com
+
+退信原因查询：http://help.sina.com.cn/i/90/152_2.html
+
+
+2018-12-26 13:46:25  [ main:1199 ] - [ INFO ]  55555@qq.com
+
+退信原因查询：http://help.sina.com.cn/i/90/152_2.html
+
+
+2018-12-26 13:46:25  [ main:1324 ] - [ INFO ]  55555@qq.com,55555@qq.com
+2018-12-26 13:47:42  [ main:0 ] - [ INFO ]  55555@qq.com
+
+退信原因查询：http://help.sina.com.cn/i/90/152_2.html
+
+
+2018-12-26 13:47:43  [ main:1188 ] - [ INFO ]  55555@qq.com
+
+退信原因查询：http://help.sina.com.cn/i/90/152_2.html
+
+
+2018-12-26 13:47:43  [ main:1312 ] - [ INFO ]  55555@qq.com,55555@qq.com
+2018-12-26 13:53:40  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 13:53:41  [ pool-1-thread-1:1345 ] - [ INFO ]  发送成功
+2018-12-26 13:53:42  [ pool-1-thread-1:2041 ] - [ INFO ]  发送成功
+2018-12-26 13:53:47  [ pool-1-thread-1:7856 ] - [ INFO ]  55555@qq.com
+2018-12-26 13:53:47  [ pool-1-thread-1:7856 ] - [ INFO ]  55555@qq.com
+2018-12-26 13:53:47  [ pool-1-thread-1:7856 ] - [ INFO ]  1960486253xxx@qq.com
+2018-12-26 13:53:50  [ pool-1-thread-1:10583 ] - [ INFO ]  发送成功
+2018-12-26 13:53:51  [ pool-1-thread-1:11365 ] - [ INFO ]  发送成功
+2018-12-26 14:10:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 14:10:01  [ pool-1-thread-1:1073 ] - [ INFO ]  发送成功
+2018-12-26 14:10:01  [ pool-1-thread-1:1789 ] - [ INFO ]  发送成功
+2018-12-26 14:10:12  [ pool-1-thread-1:12269 ] - [ INFO ]  55555@qq.com
+2018-12-26 14:10:12  [ pool-1-thread-1:12269 ] - [ INFO ]  55555@qq.com
+2018-12-26 14:10:12  [ pool-1-thread-1:12269 ] - [ INFO ]  1960486253xxx@qq.com
+2018-12-26 14:10:12  [ pool-1-thread-1:12269 ] - [ INFO ]  157510262922225@163.com
+2018-12-26 14:10:12  [ pool-1-thread-1:12269 ] - [ INFO ]  1960486253xxx@qq.com
+2018-12-26 14:10:12  [ pool-1-thread-1:12269 ] - [ INFO ]  157510262922225@163.com
+2018-12-26 14:10:12  [ pool-1-thread-1:12269 ] - [ INFO ]  1960486253xxx@qq.com
+2018-12-26 14:50:00  [ pool-4-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 14:50:01  [ pool-4-thread-1:1156 ] - [ INFO ]  发送成功
+2018-12-26 14:50:01  [ pool-4-thread-1:1865 ] - [ INFO ]  发送成功
+2018-12-26 14:50:20  [ pool-4-thread-1:20204 ] - [ INFO ]  55555@qq.com
+2018-12-26 14:50:20  [ pool-4-thread-1:20442 ] - [ INFO ]  55555@qq.com
+2018-12-26 14:50:20  [ pool-4-thread-1:20484 ] - [ INFO ]  1960486253xxx@qq.com
+2018-12-26 14:50:20  [ pool-4-thread-1:20534 ] - [ INFO ]  157510262922225@163.com
+2018-12-26 14:50:20  [ pool-4-thread-1:20575 ] - [ INFO ]  1960486253xxx@qq.com
+2018-12-26 14:50:20  [ pool-4-thread-1:20654 ] - [ INFO ]  157510262922225@163.com
+2018-12-26 14:50:20  [ pool-4-thread-1:20701 ] - [ INFO ]  1960486253xxx@qq.com
+2018-12-26 14:50:20  [ pool-4-thread-1:20801 ] - [ INFO ]  157510262922225@163.com
+2018-12-26 14:50:20  [ pool-4-thread-1:20850 ] - [ INFO ]  1960486253xxx@qq.com
+2018-12-26 14:55:00  [ pool-1-thread-1:5 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 14:55:01  [ pool-1-thread-1:1096 ] - [ INFO ]  发送成功
+2018-12-26 14:55:02  [ pool-1-thread-1:2210 ] - [ INFO ]  发送成功
+2018-12-26 14:55:08  [ pool-1-thread-1:8107 ] - [ INFO ]  157510262922225@163.com
+2018-12-26 14:55:08  [ pool-1-thread-1:8219 ] - [ INFO ]  1960486253xxx@qq.com
+2018-12-26 15:00:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 15:00:01  [ pool-1-thread-1:1273 ] - [ INFO ]  发送成功
+2018-12-26 15:00:02  [ pool-1-thread-1:2001 ] - [ INFO ]  发送成功
+2018-12-26 15:00:05  [ pool-1-thread-1:5751 ] - [ INFO ]  157510262922225@163.com
+2018-12-26 15:15:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 15:15:01  [ pool-1-thread-1:1388 ] - [ INFO ]  发送成功
+2018-12-26 15:15:02  [ pool-1-thread-1:2512 ] - [ INFO ]  发送成功
+2018-12-26 16:03:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 16:03:01  [ pool-1-thread-1:1691 ] - [ INFO ]  发送成功
+2018-12-26 16:03:02  [ pool-1-thread-1:2394 ] - [ INFO ]  发送成功
+2018-12-26 16:06:00  [ pool-1-thread-1:180861 ] - [ INFO ]  发送成功
+2018-12-26 16:06:01  [ pool-1-thread-1:181636 ] - [ INFO ]  发送成功
+2018-12-26 16:10:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 16:10:08  [ pool-1-thread-1:7963 ] - [ ERROR ]  1此邮箱无法发送!!!
+2018-12-26 16:10:33  [ PathWatcher@24a04257:32955 ] - [ INFO ]  {dataSource-1} closed
+2018-12-26 16:26:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 16:26:09  [ pool-1-thread-1:8990 ] - [ ERROR ]  1960486255553@qq.com此邮箱无法发送!!!
+2018-12-26 16:26:09  [ pool-1-thread-1:9023 ] - [ ERROR ]  15751026295XXX@163.com此邮箱无法发送!!!
+2018-12-26 16:26:09  [ pool-1-thread-1:9040 ] - [ ERROR ]  1960486255553@qq.com此邮箱无法发送!!!
+2018-12-26 16:30:00  [ pool-1-thread-1:1 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 16:34:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 16:35:38  [ pool-1-thread-1:98504 ] - [ ERROR ]  1960486255553@qq.com此邮箱无法发送!!!
+2018-12-26 16:42:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 16:44:00  [ pool-1-thread-1:120765 ] - [ ERROR ]  550 Sender frequency limited.
+
+2018-12-26 16:44:00  [ pool-1-thread-1:120765 ] - [ ERROR ]  今天发送次数太多了
+2018-12-26 16:44:01  [ pool-1-thread-1:121740 ] - [ ERROR ]  550 Sender frequency limited.
+
+2018-12-26 16:44:01  [ pool-1-thread-1:121741 ] - [ ERROR ]  今天发送次数太多了
+2018-12-26 16:44:02  [ pool-1-thread-1:122419 ] - [ ERROR ]  550 Sender frequency limited.
+
+2018-12-26 16:44:02  [ pool-1-thread-1:122420 ] - [ ERROR ]  今天发送次数太多了
+2018-12-26 16:48:00  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 16:48:01  [ pool-1-thread-1:1885 ] - [ ERROR ]  550 Sender frequency limited.
+
+2018-12-26 16:48:01  [ pool-1-thread-1:1886 ] - [ ERROR ]  今天发送次数太多了
+2018-12-26 16:48:02  [ pool-1-thread-1:2525 ] - [ ERROR ]  550 Sender frequency limited.
+
+2018-12-26 16:48:02  [ pool-1-thread-1:2526 ] - [ ERROR ]  今天发送次数太多了
+2018-12-26 16:48:03  [ pool-1-thread-1:3469 ] - [ ERROR ]  550 Sender frequency limited.
+
+2018-12-26 16:48:03  [ pool-1-thread-1:3469 ] - [ ERROR ]  今天发送次数太多了
+2018-12-26 16:49:51  [ PathWatcher@eaf8427:110996 ] - [ INFO ]  {dataSource-1} closed
+2018-12-26 16:52:07  [ pool-1-thread-1:0 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 16:58:01  [ pool-2-thread-1:0 ] - [ ERROR ]  
+2018-12-26 16:58:01  [ pool-2-thread-1:110 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 16:58:11  [ pool-2-thread-1:9747 ] - [ ERROR ]  
+2018-12-26 16:58:26  [ pool-2-thread-1:24722 ] - [ ERROR ]  196048625vvv3@qq.com,1960486259999999993@qq.com,1960486259999999993@qq.com
+2018-12-26 16:58:31  [ pool-2-thread-1:29769 ] - [ ERROR ]  
+2018-12-26 16:58:41  [ pool-2-thread-1:39632 ] - [ ERROR ]  
+2018-12-26 17:01:16  [ pool-1-thread-1:0 ] - [ ERROR ]  196048625vvv3@qq.com,1960486259999999993@qq.com,1960486259999999993@qq.com
+2018-12-26 17:01:17  [ pool-1-thread-1:145 ] - [ INFO ]  {dataSource-1} inited
+2018-12-26 17:01:21  [ pool-1-thread-1:4279 ] - [ ERROR ]  
+2018-12-26 17:01:31  [ pool-1-thread-1:14288 ] - [ ERROR ]  
+2018-12-26 17:01:41  [ pool-1-thread-1:24583 ] - [ ERROR ]  

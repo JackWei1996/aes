@@ -9,6 +9,7 @@
     <result column="content" property="content" jdbcType="VARCHAR" />
     <result column="adjunct" property="adjunct" jdbcType="VARCHAR" />
     <result column="cc" property="cc" jdbcType="VARCHAR" />
+    <result column="state" property="state" jdbcType="TINYINT" />
   </resultMap>
   <sql id="Example_Where_Clause" >
     <where >
@@ -69,12 +70,14 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    id, project_name, e_mail, title, content, adjunct, cc
+    id, project_name, e_mail, title, content, adjunct, cc, state
   </sql>
   <select id="queryAllReceiver" resultMap="BaseResultMap">
-		select * from receiver;
+	select
+	<include refid="Base_Column_List" /> 
+ 	from receiver
   </select>
-	
+  
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.aisino.pojo.ReceiverExample" >
     select
     <if test="distinct" >
@@ -106,12 +109,12 @@
     </if>
   </delete>
   <insert id="insert" parameterType="com.aisino.pojo.Receiver" >
-    insert into receiver (project_name, e_mail, 
+    insert into receiver (id, project_name, e_mail, 
       title, content, adjunct, 
-      cc)
-    values ( #{projectName,jdbcType=VARCHAR}, #{eMail,jdbcType=VARCHAR}, 
+      cc, state)
+    values (#{id,jdbcType=INTEGER}, #{projectName,jdbcType=VARCHAR}, #{eMail,jdbcType=VARCHAR}, 
       #{title,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, #{adjunct,jdbcType=VARCHAR}, 
-      #{cc,jdbcType=VARCHAR})
+      #{cc,jdbcType=VARCHAR}, #{state,jdbcType=TINYINT})
   </insert>
   <insert id="insertSelective" parameterType="com.aisino.pojo.Receiver" >
     insert into receiver
@@ -137,6 +140,9 @@
       <if test="cc != null" >
         cc,
       </if>
+      <if test="state != null" >
+        state,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -159,6 +165,9 @@
       </if>
       <if test="cc != null" >
         #{cc,jdbcType=VARCHAR},
+      </if>
+      <if test="state != null" >
+        #{state,jdbcType=TINYINT},
       </if>
     </trim>
   </insert>
@@ -192,6 +201,9 @@
       <if test="record.cc != null" >
         cc = #{record.cc,jdbcType=VARCHAR},
       </if>
+      <if test="record.state != null" >
+        state = #{record.state,jdbcType=TINYINT},
+      </if>
     </set>
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
@@ -205,7 +217,8 @@
       title = #{record.title,jdbcType=VARCHAR},
       content = #{record.content,jdbcType=VARCHAR},
       adjunct = #{record.adjunct,jdbcType=VARCHAR},
-      cc = #{record.cc,jdbcType=VARCHAR}
+      cc = #{record.cc,jdbcType=VARCHAR},
+      state = #{record.state,jdbcType=TINYINT}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -231,6 +244,9 @@
       <if test="cc != null" >
         cc = #{cc,jdbcType=VARCHAR},
       </if>
+      <if test="state != null" >
+        state = #{state,jdbcType=TINYINT},
+      </if>
     </set>
     where id = #{id,jdbcType=INTEGER}
   </update>
@@ -241,7 +257,8 @@
       title = #{title,jdbcType=VARCHAR},
       content = #{content,jdbcType=VARCHAR},
       adjunct = #{adjunct,jdbcType=VARCHAR},
-      cc = #{cc,jdbcType=VARCHAR}
+      cc = #{cc,jdbcType=VARCHAR},
+      state = #{state,jdbcType=TINYINT}
     where id = #{id,jdbcType=INTEGER}
   </update>
 </mapper>

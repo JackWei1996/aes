@@ -10,7 +10,10 @@ package com.aisino.service;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Param;
+
 import com.aisino.pojo.Receiver;
+import com.aisino.pojo.ReceiverExample;
 
 /**
  * class name:IReceiver <BR>
@@ -23,4 +26,8 @@ public interface IReceiver {
 	public List<Receiver> queryAllReceiver();
 
 	public int addReceiver(Receiver receiver);
+	
+	List<Receiver> selectByExample(ReceiverExample example);
+	
+	int updateByExampleSelective(@Param("record") Receiver record, @Param("example") ReceiverExample example);
 }
