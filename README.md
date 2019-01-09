@@ -1,5 +1,6 @@
-aes
+第一标题
 ==========
+
 系统介绍
 ---------------
 
@@ -15,26 +16,32 @@ aes
 
 ###### 六级标题 
 
+# 回车
 这是一段普通的文本，  
 直接回车不能换行，<br>  
 要使用\<br>  
+# 强调
 Thank `You` . Please `Call` Me `Coder`
+# 连接
 [我的博客](http://blog.csdn.net/guodongxiaren) 
 [我的博客](http://blog.csdn.net/guodongxiaren "悬停显示")  
+# 项目符号
 * 昵称：果冻虾仁  
 * 别名：隔壁老王  
 * 英文名：Jelly  
 * 编程语言  
     * 脚本语言  
-        * Python  
+        * Python
+# 缩进
 >数据结构  
 >>树  
 >>>二叉树  
 >>>>平衡二叉树  
 >>>>>满二叉树  
+# 插入图片
 ![baidu](http://www.baidu.com/img/bdlogo.gif "百度logo")  
 即 叹号! + 方括号[ ] + 括号( ) 其中叹号里是图片的URL。
-
+# 加入代码
 ```Java
 public static void main(String[] args){
 }
@@ -42,7 +49,7 @@ public static void main(String[] args){
 ```
 int main(int argc, char *argv[])
 ```
-
+# 加入表格
 |Tables         | Are           | Cool  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
